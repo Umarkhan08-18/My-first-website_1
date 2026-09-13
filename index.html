@@ -1,0 +1,3066 @@
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOOR — Pakistan's Science-Forward Skincare & Haircare</title>
+<meta name="description" content="Dermatologist-tested, in-house formulated serums, cleansers, moisturisers & haircare. Free shipping on orders above Rs.3,000. Cash on Delivery available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+/* ========== RESET & TOKENS ========== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#4a4a4a;
+  --page-bg:#fafafa;
+  --soft-panel:#f2f2f2;
+  --light-panel:#ededed;
+  --dark-panel:#323232;
+  --black-band:#0a0a0a;
+  --accent-pink:#febed6;
+  --hover-orange:#ff6f2e;
+  --success-bg:#d5f9da;
+  --success-border:#c3f7ca;
+  --border:#ddd;
+  --border-dashed:#e1e1e1;
+  --font-main:'DM Sans','Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --base-size:15px;
+  --line-height:1.6;
+  --weight-regular:400;
+  --weight-semibold:600;
+  --weight-bold:700;
+  --eyebrow:12px;
+  --eyebrow-ls:.2em;
+  --btn-size:12px;
+  --btn-ls:.1em;
+  --radius-0:0;
+  --container:1400px;
+  --gutter:30px;
+  --gutter-mobile:15px;
+}
+html{font-size:var(--base-size);-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:var(--font-main);
+  line-height:var(--line-height);
+  font-weight:var(--weight-regular);
+  color:var(--ink);
+  background:var(--page-bg);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul,ol{list-style:none}
+input,select,textarea{font-family:inherit;font-size:inherit}
+:focus-visible{outline:2px solid var(--hover-orange);outline-offset:2px}
+
+/* ========== UTILITY CLASSES ========== */
+.container{width:100%;max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+@media(max-width:767px){.container{padding:0 var(--gutter-mobile)}}
+.eyebrow{
+  font-size:var(--eyebrow);
+  font-weight:var(--weight-semibold);
+  letter-spacing:var(--eyebrow-ls);
+  text-transform:uppercase;
+  display:inline-block;
+}
+.btn{
+  font-size:var(--btn-size);
+  font-weight:var(--weight-semibold);
+  letter-spacing:var(--btn-ls);
+  text-transform:uppercase;
+  padding:14px 32px;
+  border-radius:var(--radius-0);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  transition:all .25s ease;
+  white-space:nowrap;
+  min-height:48px;
+}
+.btn-solid{
+  background:var(--black-band);
+  color:#fff;
+  border:1px solid var(--black-band);
+  border-bottom:3px solid #333;
+}
+.btn-solid:hover{background:var(--hover-orange);border-color:var(--hover-orange);border-bottom-color:#cc5a24}
+.btn-outline{
+  background:transparent;
+  color:var(--black-band);
+  border:2px solid var(--black-band);
+}
+.btn-outline:hover{background:var(--hover-orange);color:#fff;border-color:var(--hover-orange)}
+.btn-underline{
+  background:transparent;
+  color:var(--black-band);
+  border:none;
+  border-bottom:2px solid var(--black-band);
+  padding:4px 0;
+  min-height:auto;
+  text-decoration:none;
+}
+.btn-underline:hover{border-bottom-color:var(--hover-orange);color:var(--hover-orange)}
+.btn-pink{
+  background:var(--accent-pink);
+  color:#000;
+  border:1px solid var(--accent-pink);
+  border-bottom:3px solid #e8a8c0;
+}
+.btn-pink:hover{background:var(--hover-orange);color:#fff;border-color:var(--hover-orange)}
+
+.section-eyebrow{
+  font-size:var(--eyebrow);
+  font-weight:var(--weight-semibold);
+  letter-spacing:var(--eyebrow-ls);
+  text-transform:uppercase;
+  color:var(--ink);
+  margin-bottom:8px;
+}
+.section-title{
+  font-size:clamp(24px,3vw,32px);
+  font-weight:var(--weight-bold);
+  line-height:1.2;
+  margin-bottom:8px;
+}
+.section-subtitle{
+  font-size:var(--base-size);
+  color:#777;
+  max-width:520px;
+}
+
+/* ========== SALE BADGE ========== */
+.sale-badge{
+  position:absolute;
+  top:16px;left:16px;
+  background:var(--accent-pink);
+  color:#000;
+  font-size:var(--btn-size);
+  font-weight:var(--weight-semibold);
+  padding:4px 10px;
+  border-radius:2px;
+  z-index:2;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+/* ========== 1. ANNOUNCEMENT BAR ========== */
+.announcement-bar{
+  background:var(--black-band);
+  color:var(--accent-pink);
+  border-bottom:1px dashed var(--border-dashed);
+  font-size:13px;
+  font-weight:500;
+  position:relative;
+  z-index:1001;
+}
+.announcement-bar .swiper{width:100%}
+.announcement-bar .swiper-slide{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px var(--gutter);
+  gap:24px;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.announcement-bar a{color:var(--accent-pink);text-decoration:underline}
+.announcement-bar a:hover{color:var(--hover-orange)}
+.announcement-bar .locale-switch{
+  display:flex;align-items:center;gap:6px;
+  font-size:11px;opacity:.7;
+}
+@media(max-width:767px){
+  .announcement-bar .swiper-slide{font-size:12px;gap:12px;padding:8px var(--gutter-mobile)}
+}
+
+/* ========== 2. STICKY HEADER ========== */
+.site-header{
+  position:sticky;top:0;z-index:1000;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  transition:all .3s ease;
+}
+.site-header.scrolled{
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px var(--gutter);
+  max-width:var(--container);
+  margin:0 auto;
+  transition:padding .3s ease;
+}
+.site-header.scrolled .header-inner{padding:10px var(--gutter)}
+@media(max-width:767px){.header-inner{padding:12px var(--gutter-mobile)}}
+.header-left{display:flex;align-items:center;gap:20px}
+.header-center{position:absolute;left:50%;transform:translateX(-50%)}
+.header-right{display:flex;align-items:center;gap:18px}
+.logo{
+  font-size:28px;
+  font-weight:var(--weight-bold);
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--black-band);
+}
+.logo span{color:var(--accent-pink)}
+.header-icon{
+  width:22px;height:22px;
+  stroke:var(--ink);
+  stroke-width:1.8;
+  fill:none;
+  position:relative;
+  transition:stroke .2s;
+}
+.header-icon:hover{stroke:var(--hover-orange)}
+.header-icon .count-badge{
+  position:absolute;top:-6px;right:-8px;
+  background:var(--accent-pink);
+  color:#000;
+  font-size:10px;font-weight:700;
+  width:18px;height:18px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+}
+.nav-toggle{display:none;flex-direction:column;gap:5px;width:24px;cursor:pointer}
+.nav-toggle span{height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+@media(max-width:1023px){
+  .nav-toggle{display:flex}
+  .header-center{display:none}
+  .main-nav{display:none}
+  .main-nav.open{display:block;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:2px solid var(--black-band);z-index:999}
+  .main-nav.open .nav-list{flex-direction:column;padding:20px}
+  .main-nav.open .nav-list li{padding:12px 0;border-bottom:1px solid var(--light-panel)}
+  .mega-menu{position:static!important;box-shadow:none!important;border:none!important}
+}
+@media(min-width:1024px){.mobile-search{display:none!important}}
+
+/* ========== NAV ========== */
+.main-nav{position:relative}
+.nav-list{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.nav-list a{
+  font-size:13px;
+  font-weight:var(--weight-semibold);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink);
+  padding:4px 0;
+  position:relative;
+  transition:color .2s;
+}
+.nav-list a:hover{color:var(--hover-orange)}
+.nav-list a::after{
+  content:'';position:absolute;bottom:0;left:0;
+  width:0;height:2px;background:var(--hover-orange);
+  transition:width .25s ease;
+}
+.nav-list a:hover::after{width:100%}
+.nav-list li{position:relative}
+.nav-list li:hover .mega-menu{opacity:1;visibility:visible;transform:translateY(0)}
+
+/* MEGA MENU */
+.mega-menu{
+  position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 8px 32px rgba(0,0,0,.08);
+  padding:32px;
+  min-width:700px;
+  opacity:0;visibility:hidden;
+  transition:all .25s ease;
+  z-index:100;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.mega-col-title{
+  font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  margin-bottom:12px;color:var(--black-band);padding-bottom:8px;border-bottom:2px solid var(--accent-pink);
+}
+.mega-col a{display:block;font-size:14px;color:var(--ink);padding:5px 0;transition:color .2s}
+.mega-col a:hover{color:var(--hover-orange)}
+.mega-promo{
+  background:var(--soft-panel);
+  padding:20px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;gap:8px;
+  grid-column:span 1;
+}
+.mega-promo-img{
+  width:80px;height:80px;border-radius:50%;
+  background:var(--accent-pink);
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;
+}
+
+/* ========== 3. STORE MESSAGES STRIP ========== */
+.store-messages{
+  background:var(--soft-panel);
+  border-bottom:1px solid var(--border);
+  padding:10px 0;
+  font-size:13px;
+  font-weight:500;
+  color:#666;
+  overflow:hidden;
+}
+.store-messages-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  flex-wrap:wrap;
+}
+.store-messages .msg{
+  padding:0 20px;
+  display:flex;align-items:center;gap:8px;
+}
+.store-messages .msg:not(:last-child){border-right:1px solid var(--border)}
+.store-messages .msg a{color:var(--ink);text-decoration:underline}
+.store-messages .msg svg{width:16px;height:16px;flex-shrink:0}
+@media(max-width:767px){
+  .store-messages-inner{flex-direction:column;gap:6px}
+  .store-messages .msg{border-right:none!important;padding:2px 0;font-size:12px}
+}
+
+/* ========== 4. HERO SLIDESHOW ========== */
+.hero-section{position:relative;overflow:hidden}
+.hero-swiper .swiper-slide{position:relative}
+.hero-slide-img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+}
+.hero-slide-img.mobile{display:none}
+@media(max-width:767px){
+  .hero-slide-img.desktop{display:none}
+  .hero-slide-img.mobile{display:block;aspect-ratio:1/1}
+}
+.hero-slide-content{
+  position:absolute;
+  top:50%;left:var(--gutter);
+  transform:translateY(-50%);
+  max-width:480px;
+  z-index:2;
+}
+.hero-slide-content .eyebrow{color:#fff;margin-bottom:8px}
+.hero-slide-content h2{
+  font-size:clamp(28px,4vw,44px);
+  font-weight:var(--weight-bold);
+  color:#fff;
+  line-height:1.1;
+  margin-bottom:12px;
+  text-shadow:0 2px 12px rgba(0,0,0,.3);
+}
+.hero-slide-content p{
+  font-size:16px;color:rgba(255,255,255,.9);margin-bottom:24px;
+  text-shadow:0 1px 4px rgba(0,0,0,.3);
+}
+.hero-slide-content .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero-slide-content .btn-solid{background:#fff;color:var(--black-band);border-color:#fff}
+.hero-slide-content .btn-solid:hover{background:var(--hover-orange);color:#fff;border-color:var(--hover-orange)}
+.hero-slide-content .btn-outline{color:#fff;border-color:#fff}
+.hero-slide-content .btn-outline:hover{background:var(--hover-orange);border-color:var(--hover-orange)}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.1) 60%,transparent 100%);
+  z-index:1;
+}
+.hero-swiper .swiper-pagination-bullet{width:10px;height:10px;background:#fff;opacity:.5;transition:.3s}
+.hero-swiper .swiper-pagination-bullet-active{opacity:1;background:var(--accent-pink);width:28px;border-radius:5px}
+.hero-swiper .swiper-button-prev,.hero-swiper .swiper-button-next{color:#fff;width:44px;height:44px}
+.hero-swiper .swiper-button-prev::after,.hero-swiper .swiper-button-next::after{font-size:20px}
+@media(max-width:767px){
+  .hero-slide-content{left:var(--gutter-mobile);max-width:280px}
+  .hero-slide-content h2{font-size:24px}
+  .hero-slide-content p{font-size:14px}
+}
+
+/* ========== SECTION SPACING ========== */
+.home-section{padding:64px 0}
+@media(max-width:767px){.home-section{padding:40px 0}}
+.section-header{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  margin-bottom:32px;flex-wrap:wrap;gap:12px;
+}
+
+/* ========== 5 & 6. PRODUCT / BUNDLE CAROUSELS ========== */
+.product-carousel .swiper{overflow:visible}
+.product-carousel .swiper-slide{height:auto}
+.product-card{
+  position:relative;
+  display:flex;flex-direction:column;
+  height:100%;
+}
+.product-card-img-wrap{
+  position:relative;
+  aspect-ratio:1/1;
+  overflow:hidden;
+  background:var(--soft-panel);
+  margin-bottom:12px;
+}
+.product-card-img-wrap img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s ease,opacity .4s ease;
+}
+.product-card-img-wrap .img-hover{
+  position:absolute;inset:0;
+  opacity:0;
+  transition:opacity .4s ease;
+}
+.product-card:hover .product-card-img-wrap img:first-child{transform:scale(1.06)}
+.product-card:hover .product-card-img-wrap .img-hover{opacity:1}
+.product-card-overlay{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  justify-content:flex-end;
+  padding:12px;
+  opacity:0;
+  transition:opacity .3s ease;
+  z-index:3;
+}
+.product-card:hover .product-card-overlay{opacity:1}
+.product-card-wishlist{
+  position:absolute;top:12px;right:12px;
+  width:36px;height:36px;
+  background:#fff;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+  z-index:4;
+  transition:transform .2s,opacity .3s;
+  opacity:0;
+}
+.product-card:hover .product-card-wishlist{opacity:1}
+.product-card-wishlist:hover{transform:scale(1.1)}
+.product-card-wishlist svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2}
+.product-card-wishlist.active svg{fill:var(--accent-pink);stroke:var(--accent-pink)}
+.product-card-atc{
+  width:100%;
+  padding:10px;
+  background:var(--black-band);
+  color:#fff;
+  font-size:var(--btn-size);
+  font-weight:var(--weight-semibold);
+  letter-spacing:var(--btn-ls);
+  text-transform:uppercase;
+  text-align:center;
+  transition:background .25s;
+}
+.product-card-atc:hover{background:var(--hover-orange)}
+.product-card-info{flex:1;display:flex;flex-direction:column;gap:4px}
+.product-card-title{
+  font-size:14px;
+  font-weight:var(--weight-semibold);
+  color:var(--black-band);
+  line-height:1.3;
+}
+.product-card-reviews{
+  font-size:12px;
+  color:#888;
+  display:flex;align-items:center;gap:4px;
+}
+.product-card-reviews .stars{color:#f5a623}
+.product-card-price{
+  font-size:15px;
+  font-weight:var(--weight-bold);
+  color:var(--black-band);
+  display:flex;align-items:center;gap:8px;
+}
+.product-card-price .compare{
+  font-size:13px;
+  font-weight:var(--weight-regular);
+  color:#999;
+  text-decoration:line-through;
+}
+.product-card-price .save{
+  font-size:11px;
+  background:var(--accent-pink);
+  color:#000;
+  padding:2px 6px;
+  border-radius:2px;
+  font-weight:600;
+}
+.carousel-nav{
+  display:flex;align-items:center;gap:12px;
+}
+.carousel-arrow{
+  width:40px;height:40px;
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  background:#fff;
+  transition:all .2s;
+}
+.carousel-arrow:hover{border-color:var(--hover-orange);color:var(--hover-orange)}
+.carousel-arrow svg{width:18px;height:18px}
+
+/* ========== 7. COLLECTION LIST TILES ========== */
+.collection-tiles{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.collection-tile{
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  cursor:pointer;
+}
+.collection-tile-bg{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s ease;
+}
+.collection-tile:hover .collection-tile-bg{transform:scale(1.06)}
+.collection-tile-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.7) 100%);
+  display:flex;flex-direction:column;
+  justify-content:flex-end;
+  padding:20px;
+}
+.collection-tile-label{
+  font-size:14px;
+  font-weight:var(--weight-bold);
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:#fff;
+  margin-bottom:4px;
+}
+.collection-tile-count{
+  font-size:12px;
+  color:rgba(255,255,255,.7);
+}
+@media(max-width:767px){.collection-tiles{grid-template-columns:repeat(2,1fr);gap:10px}}
+
+/* ========== 8. BEFORE/AFTER CAROUSEL ========== */
+.ba-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:4px;
+}
+.ba-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ba-label{
+  position:absolute;bottom:12px;left:12px;
+  background:rgba(0,0,0,.75);
+  color:#fff;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:2px;
+}
+
+/* ========== 9. BRAND STORY ========== */
+.brand-story{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  min-height:480px;
+}
+.brand-story-img{
+  width:100%;height:100%;object-fit:cover;
+  aspect-ratio:1/1;
+}
+.brand-story-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:60px;
+  background:var(--soft-panel);
+}
+.brand-story-content h2{
+  font-size:clamp(24px,3vw,36px);
+  font-weight:var(--weight-bold);
+  line-height:1.2;
+  margin-bottom:16px;
+}
+.brand-story-content p{
+  font-size:15px;
+  line-height:1.7;
+  color:#666;
+  margin-bottom:24px;
+}
+.brand-story-content p strong{color:var(--ink)}
+@media(max-width:767px){
+  .brand-story{grid-template-columns:1fr}
+  .brand-story-content{padding:32px var(--gutter-mobile)}
+}
+
+/* ========== 10. BLOG CAROUSEL ========== */
+.blog-card{
+  background:#fff;
+  border:1px solid var(--border);
+  overflow:hidden;
+  transition:box-shadow .3s;
+  height:100%;
+  display:flex;flex-direction:column;
+}
+.blog-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.blog-card-img{
+  aspect-ratio:16/10;
+  overflow:hidden;
+}
+.blog-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.blog-card:hover .blog-card-img img{transform:scale(1.04)}
+.blog-card-body{padding:20px;flex:1;display:flex;flex-direction:column;gap:8px}
+.blog-card-tag{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--hover-orange)}
+.blog-card-title{font-size:16px;font-weight:var(--weight-bold);line-height:1.3}
+.blog-card-excerpt{font-size:13px;color:#888;line-height:1.5;flex:1}
+.blog-card-meta{font-size:12px;color:#aaa}
+
+/* ========== 11. UGC REVIEWS ========== */
+.ugg-review-card{
+  background:#fff;
+  border:1px solid var(--border);
+  padding:20px;
+  display:flex;flex-direction:column;gap:12px;
+  height:100%;
+}
+.ugc-header{display:flex;align-items:center;gap:12px}
+.ugc-thumb{width:48px;height:48px;border-radius:50%;object-fit:cover;background:var(--soft-panel)}
+.ugc-name{font-size:14px;font-weight:var(--weight-semibold)}
+.ugc-date{font-size:12px;color:#aaa}
+.ugc-stars{color:#f5a623;font-size:13px}
+.ugc-title{font-size:15px;font-weight:var(--weight-bold)}
+.ugc-body{font-size:13px;color:#666;line-height:1.5;flex:1;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.ugc-product{font-size:12px;color:var(--hover-orange);text-decoration:underline;font-weight:600}
+.ugc-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-top:8px}
+
+/* ========== 12. PRE-FOOTER BANNER ========== */
+.prefooter-banner{
+  background:var(--black-band);
+  padding:48px 0;
+  text-align:center;
+}
+.prefooter-banner h2{
+  color:#fff;font-size:clamp(22px,3vw,32px);font-weight:var(--weight-bold);margin-bottom:8px;
+}
+.prefooter-banner p{color:rgba(255,255,255,.6);font-size:14px;margin-bottom:24px}
+
+/* ========== 13. NEWSLETTER BAND ========== */
+.newsletter-band{
+  background:var(--accent-pink);
+  padding:40px 0;
+  text-align:center;
+}
+.newsletter-band h3{
+  font-size:20px;font-weight:var(--weight-bold);color:#000;margin-bottom:4px;
+}
+.newsletter-band p{font-size:14px;color:rgba(0,0,0,.7);margin-bottom:20px}
+.newsletter-form{
+  display:flex;
+  max-width:480px;
+  margin:0 auto;
+  gap:0;
+}
+.newsletter-form input{
+  flex:1;
+  padding:14px 16px;
+  border:2px solid #000;
+  border-right:none;
+  background:#fff;
+  font-size:14px;
+  outline:none;
+}
+.newsletter-form input:focus{border-color:var(--hover-orange)}
+.newsletter-form button{
+  padding:14px 28px;
+  background:var(--black-band);
+  color:#fff;
+  font-size:var(--btn-size);
+  font-weight:var(--weight-semibold);
+  letter-spacing:var(--btn-ls);
+  text-transform:uppercase;
+  border:2px solid #000;
+  transition:background .25s;
+}
+.newsletter-form button:hover{background:var(--hover-orange)}
+
+/* ========== 14. FOOTER ========== */
+.site-footer{background:var(--black-band);color:rgba(255,255,255,.7);padding:64px 0 0}
+.footer-mission{
+  text-align:center;
+  font-size:13px;
+  font-weight:var(--weight-semibold);
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.5);
+  padding-bottom:32px;
+  margin-bottom:32px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-social{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding-bottom:40px;
+  margin-bottom:40px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-social a{
+  width:40px;height:40px;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;
+}
+.footer-social a:hover{border-color:var(--accent-pink);background:var(--accent-pink);color:#000}
+.footer-social a svg{width:18px;height:18px;fill:currentColor}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+  padding-bottom:40px;
+}
+.footer-col-title{
+  font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:#fff;margin-bottom:16px;
+}
+.footer-col a{display:block;font-size:14px;padding:4px 0;transition:color .2s}
+.footer-col a:hover{color:var(--accent-pink)}
+.footer-col p{font-size:14px;line-height:1.6}
+.footer-credibility{
+  text-align:center;
+  font-size:12px;
+  color:rgba(255,255,255,.4);
+  padding:24px 0;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+.footer-copyright{
+  text-align:center;
+  font-size:12px;
+  color:rgba(255,255,255,.3);
+  padding:20px 0;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+@media(max-width:767px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
+
+/* ========== 15. NEWSLETTER MODAL ========== */
+.modal-overlay{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:10000;
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;
+  opacity:0;visibility:hidden;
+  transition:all .3s;
+}
+.modal-overlay.active{opacity:1;visibility:visible}
+.modal{
+  background:#fff;
+  max-width:720px;
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  overflow:hidden;
+  position:relative;
+  transform:translateY(20px);
+  transition:transform .3s;
+}
+.modal-overlay.active .modal{transform:translateY(0)}
+.modal-close{
+  position:absolute;top:12px;right:12px;
+  width:32px;height:32px;
+  background:rgba(0,0,0,.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+  z-index:2;
+  transition:background .2s;
+}
+.modal-close:hover{background:rgba(0,0,0,.2)}
+.modal-image{
+  background:linear-gradient(135deg,var(--accent-pink),#ffd4e6);
+  display:flex;align-items:center;justify-content:center;
+  padding:40px;
+}
+.modal-image-content{text-align:center}
+.modal-image-content .big-text{font-size:48px;font-weight:800;color:#000;line-height:1}
+.modal-image-content .sub-text{font-size:14px;color:rgba(0,0,0,.6);margin-top:8px}
+.modal-body{padding:40px;display:flex;flex-direction:column;justify-content:center}
+.modal-body h3{font-size:24px;font-weight:var(--weight-bold);margin-bottom:8px}
+.modal-body p{font-size:14px;color:#666;margin-bottom:20px}
+.modal-body input{
+  width:100%;padding:14px;border:1px solid var(--border);
+  margin-bottom:12px;font-size:14px;outline:none;
+}
+.modal-body input:focus{border-color:var(--hover-orange)}
+.modal-progress{
+  height:3px;background:var(--light-panel);margin-bottom:16px;overflow:hidden;
+}
+.modal-progress-bar{height:100%;background:var(--hover-orange);transition:width 1s ease}
+.modal-consent{font-size:11px;color:#999;margin-top:12px;line-height:1.4}
+@media(max-width:767px){
+  .modal{grid-template-columns:1fr}
+  .modal-image{display:none}
+  .modal-body{padding:32px 24px}
+}
+
+/* ========== 16. TOAST & COOKIE BAR ========== */
+.toast-notification{
+  position:fixed;
+  bottom:24px;left:24px;
+  width:350px;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 8px 32px rgba(0,0,0,.12);
+  padding:16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  z-index:9999;
+  transform:translateY(120%);
+  transition:transform .4s ease;
+}
+.toast-notification.show{transform:translateY(0)}
+.toast-img{width:56px;height:56px;background:var(--soft-panel);object-fit:cover;flex-shrink:0}
+.toast-info{flex:1}
+.toast-info .toast-title{font-size:13px;font-weight:600;line-height:1.3}
+.toast-info .toast-meta{font-size:11px;color:#999;margin-top:2px}
+.toast-close{width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#999}
+@media(max-width:479px){.toast-notification{display:none!important}}
+
+.cookie-bar{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--black-band);
+  color:rgba(255,255,255,.8);
+  padding:16px;
+  z-index:9998;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  font-size:13px;
+  transform:translateY(100%);
+  transition:transform .4s ease;
+}
+.cookie-bar.show{transform:translateY(0)}
+.cookie-bar button{
+  background:var(--accent-pink);
+  color:#000;
+  padding:10px 24px;
+  font-size:var(--btn-size);
+  font-weight:var(--weight-semibold);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  flex-shrink:0;
+}
+@media(max-width:767px){
+  .cookie-bar{flex-direction:column;text-align:center}
+  .toast-notification{left:10px;right:10px;width:auto;bottom:12px}
+}
+
+/* ========== PRODUCT PAGE (MODAL VIEW) ========== */
+.pp-overlay{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.5);
+  z-index:10001;
+  display:none;
+  overflow-y:auto;
+}
+.pp-overlay.active{display:block}
+.pp-container{
+  background:var(--page-bg);
+  max-width:1200px;
+  margin:40px auto;
+  position:relative;
+  min-height:80vh;
+}
+.pp-close{
+  position:sticky;top:0;float:right;
+  width:44px;height:44px;
+  background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;
+  z-index:10;
+  border:1px solid var(--border);
+}
+.pp-top{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  padding:40px;
+}
+.pp-gallery{position:sticky;top:80px;align-self:start}
+.pp-main-img{
+  aspect-ratio:1/1;
+  background:var(--soft-panel);
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.pp-main-img img{width:100%;height:100%;object-fit:cover}
+.pp-thumbs{display:flex;gap:8px}
+.pp-thumb{
+  width:64px;height:64px;
+  border:2px solid transparent;
+  cursor:pointer;
+  overflow:hidden;
+}
+.pp-thumb.active{border-color:var(--black-band)}
+.pp-thumb img{width:100%;height:100%;object-fit:cover}
+.pp-buy-box{position:sticky;top:80px;align-self:start}
+.pp-benefit{font-size:14px;color:#666;margin-bottom:8px}
+.pp-price-row{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:16px;
+}
+.pp-price{font-size:28px;font-weight:var(--weight-bold)}
+.pp-compare{font-size:18px;color:#999;text-decoration:line-through}
+.pp-sale-badge{
+  background:var(--accent-pink);
+  color:#000;
+  font-size:var(--btn-size);
+  font-weight:600;
+  padding:4px 10px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.pp-title{font-size:24px;font-weight:var(--weight-bold);line-height:1.2;margin-bottom:4px}
+.pp-reviews-link{font-size:13px;color:#888;text-decoration:underline;margin-bottom:16px;display:inline-block}
+.pp-variant-select{
+  width:100%;padding:12px;border:1px solid var(--border);
+  margin-bottom:16px;font-size:14px;background:#fff;
+}
+.pp-qty-row{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.pp-qty{
+  display:flex;align-items:center;border:1px solid var(--border);
+}
+.pp-qty button{width:40px;height:44px;font-size:18px;display:flex;align-items:center;justify-content:center}
+.pp-qty input{
+  width:48px;height:44px;text-align:center;border:none;border-left:1px solid var(--border);border-right:1px solid var(--border);
+  font-size:14px;font-weight:600;
+}
+.pp-stock{font-size:12px;color:#e74c3c;font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:6px}
+.pp-stock .pulse{width:8px;height:8px;background:#e74c3c;border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.pp-atc-btn{width:100%;margin-bottom:16px}
+.pp-payment-icons{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.pp-payment-icon{
+  padding:6px 12px;border:1px solid var(--border);font-size:11px;font-weight:600;
+  display:flex;align-items:center;gap:4px;
+}
+.pp-accordion{border-top:1px solid var(--border)}
+.pp-accordion-item{border-bottom:1px solid var(--border)}
+.pp-accordion-header{
+  width:100%;
+  padding:16px 0;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:14px;font-weight:var(--weight-semibold);
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.pp-accordion-header .arrow{transition:transform .3s;font-size:12px}
+.pp-accordion-item.open .arrow{transform:rotate(180deg)}
+.pp-accordion-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .3s ease;
+}
+.pp-accordion-item.open .pp-accordion-body{max-height:400px}
+.pp-accordion-body-inner{padding-bottom:16px;font-size:14px;color:#666;line-height:1.7}
+
+/* RICH DESCRIPTION PANEL */
+.pp-rich-panel{
+  background:var(--soft-panel);
+  border:1px solid var(--border);
+  border-radius:18px;
+  overflow:hidden;
+  margin:0 40px 40px;
+}
+.pp-rich-header{
+  background:linear-gradient(135deg,#2f2f2f 50%,#6d6d6d 50%);
+  padding:32px 40px;
+  color:#fff;
+}
+.pp-rich-header h2{
+  font-size:30px;
+  font-weight:var(--weight-bold);
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.pp-rich-header p{
+  font-size:14px;
+  color:rgba(255,255,255,.7);
+  margin-top:8px;
+  max-width:600px;
+  line-height:1.6;
+}
+.pp-rich-chips{
+  display:flex;flex-wrap:wrap;gap:8px;
+  padding:20px 40px;
+}
+.pp-chip{
+  background:rgba(0,0,0,.06);
+  padding:8px 16px;
+  border-radius:100px;
+  font-size:13px;
+  font-weight:500;
+}
+.pp-rich-split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.pp-rich-left{background:var(--light-panel);padding:32px 40px}
+.pp-rich-right{background:var(--dark-panel);padding:32px 40px;color:#fff}
+.pp-rich-benefits{margin-bottom:32px}
+.pp-rich-benefits h3,.pp-rich-ingredients h3{
+  font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  margin-bottom:16px;
+}
+.pp-benefit-item{display:flex;gap:10px;padding:8px 0;font-size:14px}
+.pp-benefit-item svg{width:18px;height:18px;flex-shrink:0;color:#27ae60}
+.pp-results-timeline{margin-top:24px}
+.pp-results-timeline h3{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.pp-timeline-card{
+  background:#fff;
+  border-radius:8px;
+  padding:16px;
+  margin-bottom:8px;
+}
+.pp-timeline-card .time{font-size:14px;font-weight:700;color:var(--black-band)}
+.pp-timeline-card .change{font-size:13px;color:#666}
+.pp-ingredient-box{
+  background:rgba(255,255,255,.08);
+  border-radius:8px;
+  padding:16px;
+  margin-bottom:8px;
+}
+.pp-ingredient-box .name{font-size:14px;font-weight:600;color:#fff}
+.pp-ingredient-box .func{font-size:12px;color:rgba(255,255,255,.6)}
+.pp-how-to-use{
+  padding:32px 40px;
+  border-top:1px solid var(--border);
+}
+.pp-how-to-use h3{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.pp-htu-step{display:flex;gap:12px;padding:8px 0}
+.pp-htu-step .num{
+  width:28px;height:28px;background:var(--black-band);color:#fff;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;flex-shrink:0;
+}
+.pp-htu-step .text{font-size:14px;color:#666}
+.pp-pro-tip{
+  padding:20px 40px;
+  background:var(--accent-pink);
+}
+.pp-pro-tip strong{color:#000}
+@media(max-width:767px){
+  .pp-top{grid-template-columns:1fr;gap:24px;padding:20px}
+  .pp-gallery{position:static}
+  .pp-buy-box{position:static}
+  .pp-rich-panel{margin:0 20px 20px;border-radius:12px}
+  .pp-rich-header{padding:24px 22px}
+  .pp-rich-header h2{font-size:24px}
+  .pp-rich-chips{padding:16px 22px}
+  .pp-rich-split{grid-template-columns:1fr}
+  .pp-rich-left,.pp-rich-right{padding:24px 22px}
+  .pp-how-to-use,.pp-pro-tip{padding:20px 22px}
+  .pp-container{margin:0;min-height:100vh}
+}
+
+/* ========== QUIZ ========== */
+.quiz-page{
+  max-width:640px;
+  margin:40px auto;
+  padding:0 var(--gutter);
+}
+.quiz-progress{
+  height:4px;background:var(--light-panel);margin-bottom:32px;
+}
+.quiz-progress-bar{height:100%;background:var(--hover-orange);transition:width .4s ease}
+.quiz-step{display:none}
+.quiz-step.active{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.quiz-step h2{font-size:24px;font-weight:var(--weight-bold);margin-bottom:8px}
+.quiz-step p{font-size:14px;color:#666;margin-bottom:24px}
+.quiz-options{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.quiz-option{
+  padding:20px;
+  border:2px solid var(--border);
+  text-align:center;
+  cursor:pointer;
+  transition:all .2s;
+  font-size:14px;
+  font-weight:500;
+}
+.quiz-option:hover,.quiz-option.selected{
+  border-color:var(--hover-orange);
+  background:rgba(255,111,46,.04);
+}
+.quiz-option .icon{font-size:28px;margin-bottom:8px}
+.quiz-option .label{font-weight:600}
+
+/* ========== WHAT TO BUY PAGE ========== */
+.wtb-section{padding:40px 0}
+.wtb-concern{margin-bottom:48px}
+.wtb-concern h3{font-size:20px;font-weight:var(--weight-bold);margin-bottom:4px}
+.wtb-concern .symptoms{font-size:13px;color:#888;margin-bottom:16px}
+.wtb-table{width:100%;border-collapse:collapse;font-size:14px}
+.wtb-table th{
+  text-align:left;padding:12px 16px;
+  background:var(--dark-panel);color:#fff;
+  font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+}
+.wtb-table td{padding:12px 16px;border-bottom:1px solid var(--border);vertical-align:top}
+.wtb-table tr:nth-child(even) td{background:var(--soft-panel)}
+.wtb-table .quote{font-style:italic;color:#666}
+.wtb-table .product-link{color:var(--hover-orange);font-weight:600;text-decoration:underline}
+
+/* ========== COLLECTION PAGE ========== */
+.collection-page-header{
+  padding:40px 0 24px;
+  border-bottom:1px solid var(--border);
+  margin-bottom:32px;
+}
+.collection-page-header h1{font-size:28px;font-weight:var(--weight-bold)}
+.collection-page-header .count{font-size:14px;color:#888}
+.collection-sort{
+  display:flex;align-items:center;gap:12px;
+  margin-top:16px;
+}
+.collection-sort select{
+  padding:10px 14px;
+  border:1px solid var(--border);
+  font-size:13px;
+  background:#fff;
+  cursor:pointer;
+}
+.filter-btn{
+  padding:10px 20px;
+  border:1px solid var(--border);
+  font-size:13px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  display:flex;align-items:center;gap:8px;
+  cursor:pointer;
+}
+.collection-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  padding-bottom:60px;
+}
+@media(max-width:767px){.collection-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+
+/* ========== MOBILE STICKY ATC (PRODUCT PAGE) ========== */
+.mobile-atc-bar{
+  position:fixed;bottom:0;left:0;right:0;
+  background:#fff;
+  border-top:1px solid var(--border);
+  padding:12px var(--gutter);
+  display:none;
+  z-index:100;
+  align-items:center;
+  gap:12px;
+  box-shadow:0 -4px 16px rgba(0,0,0,.08);
+}
+.mobile-atc-bar .price{font-size:18px;font-weight:700;flex:1}
+.mobile-atc-bar .btn{flex:1}
+@media(max-width:767px){.mobile-atc-bar.visible{display:flex}}
+
+/* ========== FLOATING WHATSAPP ========== */
+.whatsapp-float{
+  position:fixed;bottom:24px;right:24px;
+  width:56px;height:56px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(37,211,102,.4);
+  z-index:9990;
+  transition:transform .2s;
+  animation:waBounce 2s ease infinite;
+}
+.whatsapp-float:hover{transform:scale(1.1)}
+@keyframes waBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:var(--page-bg)}
+::-webkit-scrollbar-thumb{background:#ccc;border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:#aaa}
+
+/* ========== VIEWS CONTAINER ========== */
+.page-view{display:none}
+.page-view.active{display:block}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. ANNOUNCEMENT BAR ============ -->
+<div class="announcement-bar" role="marquee" aria-label="Store announcements">
+  <div class="swiper announcement-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <span>🔥 FREE SHIPPING on orders above Rs.3,000 — Limited Time</span>
+        <span class="locale-switch">🇵🇰 PKR | English</span>
+      </div>
+      <div class="swiper-slide">
+        <span>Use code <strong style="color:#fff">GLOW15</strong> for 15% off your first order</span>
+        <span class="locale-switch">🇵🇰 PKR | English</span>
+      </div>
+      <div class="swiper-slide">
+        <span>Need help choosing? Call <a href="tel:+923001234567">0300-1234567</a> or WhatsApp us</span>
+        <span class="locale-switch">🇵🇰 PKR | English</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 2. STICKY HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="header-left">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <!-- Mobile search -->
+      <button class="mobile-search header-icon" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+    </div>
+    <div class="header-center">
+      <a href="#" class="logo" onclick="showView('home')">NOO<span>R</span></a>
+    </div>
+    <div class="header-right">
+      <button class="header-icon" aria-label="Search" style="display:flex">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="header-icon" aria-label="Account">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="header-icon" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="header-icon" aria-label="Cart" id="cartIcon" onclick="openCart()">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="count-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN NAV -->
+  <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li>
+        <a href="#" onclick="event.preventDefault()">Shop</a>
+        <div class="mega-menu" role="menu">
+          <div class="mega-col">
+            <div class="mega-col-title">Shop By</div>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Shop All</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Best Sellers</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">New In</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Clearance</a>
+            <div class="mega-col-title" style="margin-top:16px">Form Category</div>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Serums & Toners</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Cleansers</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Moisturisers</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Sun Protection</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Face Masks</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Haircare</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-col-title">Featured Products</div>
+            <a href="#" onclick="showView('product');event.preventDefault()">Glow Drops Vitamin C Serum</a>
+            <a href="#" onclick="showView('product');event.preventDefault()">Clear Skin Salicylic Cleanser</a>
+            <a href="#" onclick="showView('product');event.preventDefault()">Hydra Veil Moisturiser</a>
+            <a href="#" onclick="showView('product');event.preventDefault()">Sun Guard SPF 50</a>
+            <a href="#" onclick="showView('product');event.preventDefault()">Hair Rescue Biotin Serum</a>
+            <a href="#" onclick="showView('product');event.preventDefault()">Bright Eye Vitamin K Cream</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-promo">
+              <div class="mega-promo-img">✨</div>
+              <div style="font-size:14px;font-weight:600;color:var(--black-band)">Bundle & Save</div>
+              <div style="font-size:13px;color:#666">Save up to 20% on curated routines</div>
+              <a href="#" class="btn btn-solid" style="font-size:11px;padding:10px 20px" onclick="event.preventDefault()">Shop Now</a>
+            </div>
+            <div class="mega-promo" style="margin-top:16px">
+              <div class="mega-promo-img">🎯</div>
+              <div style="font-size:14px;font-weight:600;color:var(--black-band)">Skin Quiz</div>
+              <div style="font-size:13px;color:#666">Get personalised recommendations</div>
+              <a href="#" class="btn btn-outline" style="font-size:11px;padding:10px 20px" onclick="showView('quiz');event.preventDefault()">Take Quiz</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="#" onclick="showView('collection');event.preventDefault()">Bundles</a></li>
+      <li>
+        <a href="#" onclick="event.preventDefault()">Shop by Skin</a>
+        <div class="mega-menu" role="menu" style="min-width:800px;grid-template-columns:repeat(3,1fr)">
+          <div class="mega-col">
+            <div class="mega-col-title">Concerns</div>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Dark Spots & Pigmentation</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Acne, Pimples & Marks</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Open Pores & Bumpy Skin</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Dull & Dry Skin</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Fine Lines & Ageing</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Dark Circles & Puffy Eyes</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Damaged & Thin Skin</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Hair Fall & Damaged Hair</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Dry & Frizzy Hair</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-col-title">Skin Type</div>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Normal Skin</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Oily Skin</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Combination Skin</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Dry Skin</a>
+            <div class="mega-col-title" style="margin-top:16px">Special</div>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Pregnancy Safe</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Results Routines</a>
+          </div>
+          <div class="mega-col">
+            <div class="mega-col-title">Quick Links</div>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Build Your Own Bundle</a>
+            <a href="#" onclick="showView('collection');event.preventDefault()">Duos & Trios</a>
+            <a href="#" onclick="showView('wtb');event.preventDefault()">What to Buy Guide</a>
+            <a href="#" onclick="showView('quiz');event.preventDefault()">Take the Skin Quiz</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#" onclick="showView('quiz');event.preventDefault()">Skin Quiz</a></li>
+      <li><a href="#" onclick="event.preventDefault()">Our Story</a></li>
+      <li><a href="#" onclick="showView('wtb');event.preventDefault()">What to Buy</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ HOME PAGE VIEW ============ -->
+<div class="page-view active" id="view-home">
+
+<!-- ============ 3. STORE MESSAGES STRIP ============ -->
+<div class="store-messages">
+  <div class="container">
+    <div class="store-messages-inner">
+      <div class="msg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <span>Free Delivery on Rs.3,000+</span>
+      </div>
+      <div class="msg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>In-House Formulated &amp; Tested</span>
+      </div>
+      <div class="msg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        <a href="#" onclick="showView('collection');event.preventDefault()">Cash on Delivery Available — Shop Now →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 4. HERO SLIDESHOW ============ -->
+<section class="hero-section">
+  <div class="swiper hero-swiper" id="heroSwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div style="position:relative">
+          <div style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);width:100%;aspect-ratio:16/9" class="hero-slide-img desktop" role="img" aria-label="Glow Drops Vitamin C Serum collection"></div>
+          <div style="background:linear-gradient(180deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);width:100%;aspect-ratio:1/1" class="hero-slide-img mobile" role="img" aria-label="Glow Drops Serum"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-slide-content">
+            <span class="eyebrow">New Launch</span>
+            <h2>Real Results Start With Science-Forward Formulas</h2>
+            <p>Percentage-backed actives, in-house tested, made for Pakistani skin and climate.</p>
+            <div class="btns">
+              <a href="#" class="btn btn-solid" onclick="showView('collection');event.preventDefault()">Shop Best Sellers</a>
+              <a href="#" class="btn btn-outline" onclick="showView('quiz');event.preventDefault()">Find Your Routine</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div style="position:relative">
+          <div style="background:linear-gradient(135deg,#2d1b4e 0%,#44318d 50%,#5b3a8c 100%);width:100%;aspect-ratio:16/9" class="hero-slide-img desktop" role="img" aria-label="Bundle deals"></div>
+          <div style="background:linear-gradient(180deg,#2d1b4e 0%,#44318d 50%,#5b3a8c 100%);width:100%;aspect-ratio:1/1" class="hero-slide-img mobile" role="img" aria-label="Bundle deals"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-slide-content">
+            <span class="eyebrow">Bundle & Save</span>
+            <h2>Curated Routines, Up to 20% Off</h2>
+            <p>Pairs and trios hand-picked for your skin concern — less guesswork, more glow.</p>
+            <div class="btns">
+              <a href="#" class="btn btn-solid" onclick="showView('collection');event.preventDefault()">Shop Bundles</a>
+              <a href="#" class="btn btn-outline" onclick="showView('wtb');event.preventDefault()">What to Buy Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination hero-pagination"></div>
+    <div class="swiper-button-prev hero-prev"></div>
+    <div class="swiper-button-next hero-next"></div>
+  </div>
+</section>
+
+<!-- ============ 5. FEATURED PRODUCTS CAROUSEL ============ -->
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="section-eyebrow">Customer Favourites</span>
+        <h2 class="section-title">Best Sellers</h2>
+        <p class="section-subtitle">The formulas our community keeps coming back for.</p>
+      </div>
+      <a href="#" class="btn btn-underline" onclick="showView('collection');event.preventDefault()">Show All</a>
+    </div>
+    <div class="product-carousel">
+      <div class="swiper featured-swiper">
+        <div class="swiper-wrapper" id="featuredProducts">
+          <!-- Products injected by JS -->
+        </div>
+      </div>
+      <div class="carousel-nav" style="margin-top:20px">
+        <button class="carousel-arrow featured-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="carousel-arrow featured-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. BUNDLES CAROUSEL ============ -->
+<section class="home-section" style="background:var(--soft-panel)">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="section-eyebrow">Save More Together</span>
+        <h2 class="section-title">Routine Bundles</h2>
+        <p class="section-subtitle">Complete routines at better value — hand-picked for your concern.</p>
+      </div>
+      <a href="#" class="btn btn-underline" onclick="showView('collection');event.preventDefault()">Show All Bundles</a>
+    </div>
+    <div class="product-carousel">
+      <div class="swiper bundle-swiper">
+        <div class="swiper-wrapper" id="bundleProducts">
+          <!-- Bundles injected by JS -->
+        </div>
+      </div>
+      <div class="carousel-nav" style="margin-top:20px">
+        <button class="carousel-arrow bundle-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="carousel-arrow bundle-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. COLLECTION LIST TILES ============ -->
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="section-eyebrow">What's Bothering You?</span>
+        <h2 class="section-title">Shop by Concern</h2>
+        <p class="section-subtitle">Start with your skin problem, we'll guide you to the right formula.</p>
+      </div>
+    </div>
+    <div class="collection-tiles" id="concernTiles">
+      <!-- Tiles injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. BEFORE/AFTER RESULTS CAROUSEL ============ -->
+<section class="home-section" style="background:var(--soft-panel)">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="section-eyebrow">Real People, Real Skin</span>
+        <h2 class="section-title">Visible Results from Our Community</h2>
+        <p class="section-subtitle">Unretouched photos shared by verified NOOR customers.</p>
+      </div>
+    </div>
+    <div class="swiper ba-swiper">
+      <div class="swiper-wrapper" id="baCarousel">
+        <!-- BA cards injected by JS -->
+      </div>
+    </div>
+    <div class="carousel-nav" style="margin-top:20px">
+      <button class="carousel-arrow ba-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="carousel-arrow ba-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. BRAND STORY SPLIT ============ -->
+<section class="home-section">
+  <div class="container">
+    <div class="brand-story">
+      <div style="background:linear-gradient(135deg,#f5e6d3 0%,#e8d5c4 50%,#d4c4b0 100%);display:flex;align-items:center;justify-content:center;min-height:400px">
+        <div style="text-align:center;padding:40px">
+          <div style="font-size:72px;margin-bottom:16px">🧪</div>
+          <div style="font-size:14px;color:#8b7355;font-weight:600;letter-spacing:.15em;text-transform:uppercase">Founded 2022 · Karachi</div>
+        </div>
+      </div>
+      <div class="brand-story-content">
+        <span class="section-eyebrow">Our Story</span>
+        <h2>Formulated In-House, Tested on Real Skin</h2>
+        <p>
+          NOOR was born from a simple frustration: <strong>effective skincare shouldn't cost a month's salary</strong>, and it shouldn't require a chemistry degree to understand.
+        </p>
+        <p>
+          Every formula is <strong>developed and manufactured in our own Karachi lab</strong>. We test each batch for stability and efficacy across diverse Pakistani skin tones and climates. Our ingredient percentages are printed on the label — <strong>no hidden actives, no filler claims</strong>.
+        </p>
+        <p>
+          We work with dermatologists during development and publish <strong>results timelines on every product page</strong> so you know exactly when to expect change.
+        </p>
+        <a href="#" class="btn btn-outline" onclick="event.preventDefault()">Read Our Full Story →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. BLOG CAROUSEL ============ -->
+<section class="home-section" style="background:var(--soft-panel)">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="section-eyebrow">Ingredient Education</span>
+        <h2 class="section-title">The Skin Science Blog</h2>
+        <p class="section-subtitle">Understand what goes on your skin and why it works.</p>
+      </div>
+      <a href="#" class="btn btn-underline" onclick="event.preventDefault()">Read All Articles</a>
+    </div>
+    <div class="swiper blog-swiper">
+      <div class="swiper-wrapper" id="blogCarousel">
+        <!-- Blog cards injected by JS -->
+      </div>
+    </div>
+    <div class="carousel-nav" style="margin-top:20px">
+      <button class="carousel-arrow blog-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="carousel-arrow blog-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. UGC REVIEW CAROUSEL ============ -->
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <span class="section-eyebrow">Trusted by Thousands</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:8px">
+          <div style="background:var(--accent-pink);color:#000;padding:8px 16px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px">
+            <span style="color:#f5a623">★★★★★</span> 4.7 / 5
+          </div>
+          <span style="font-size:14px;color:#888">Based on 2,847 reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper ugc-swiper">
+      <div class="swiper-wrapper" id="ugcCarousel">
+        <!-- UGC cards injected by JS -->
+      </div>
+    </div>
+    <div class="carousel-nav" style="margin-top:20px">
+      <button class="carousel-arrow ugc-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="carousel-arrow ugc-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. PRE-FOOTER BANNER ============ -->
+<section class="prefooter-banner">
+  <div class="container">
+    <span class="eyebrow" style="color:rgba(255,255,255,.5);margin-bottom:8px">Your Skin, Our Science</span>
+    <h2>Not Sure Where to Start?</h2>
+    <p>Take our 2-minute skin quiz for personalised recommendations backed by real results data.</p>
+    <a href="#" class="btn btn-pink" onclick="showView('quiz');event.preventDefault()">Take the Skin Quiz →</a>
+  </div>
+</section>
+
+<!-- ============ 13. NEWSLETTER BAND ============ -->
+<section class="newsletter-band">
+  <div class="container">
+    <h3>Join the NOOR Glow List</h3>
+    <p>Get 10% off your first order, plus early access to launches and exclusive deals.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+</div>
+<!-- END HOME VIEW -->
+
+<!-- ============ COLLECTION PAGE VIEW ============ -->
+<div class="page-view" id="view-collection">
+  <div class="container">
+    <div class="collection-page-header">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+        <span style="font-size:12px;color:#999">Home</span>
+        <span style="font-size:12px;color:#ccc">/</span>
+        <span style="font-size:12px;color:#999">Collections</span>
+        <span style="font-size:12px;color:#ccc">/</span>
+        <span style="font-size:12px;color:var(--ink)">Best Sellers</span>
+      </div>
+      <h1>Best Sellers</h1>
+      <span class="count">12 products</span>
+      <div class="collection-sort">
+        <button class="filter-btn" onclick="toggleFilter()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="12" y2="18"/></svg>
+          Filter
+        </button>
+        <select aria-label="Sort products">
+          <option>Sort: Featured</option>
+          <option>Best selling</option>
+          <option>A — Z</option>
+          <option>Z — A</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Date: Oldest</option>
+          <option>Date: Newest</option>
+        </select>
+      </div>
+    </div>
+    <div class="collection-grid" id="collectionGrid">
+      <!-- Products injected by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT PAGE VIEW ============ -->
+<div class="page-view" id="view-product">
+  <div class="pp-container">
+    <button class="pp-close" onclick="showView('home')" aria-label="Close product page">✕</button>
+
+    <!-- Breadcrumb -->
+    <div style="padding:20px 40px 0">
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#999">
+        <a href="#" onclick="showView('home');event.preventDefault()" style="text-decoration:underline">Home</a>
+        <span>/</span>
+        <a href="#" onclick="showView('collection');event.preventDefault()" style="text-decoration:underline">Serums & Toners</a>
+        <span>/</span>
+        <span style="color:var(--ink)">Glow Drops Vitamin C Serum</span>
+      </div>
+    </div>
+
+    <!-- TOP: Gallery + Buy Box -->
+    <div class="pp-top">
+      <!-- Gallery -->
+      <div class="pp-gallery">
+        <div class="pp-main-img" id="ppMainImg">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#fce4ec 0%,#f8bbd0 50%,#f48fb1 100%);display:flex;align-items:center;justify-content:center">
+            <div style="text-align:center">
+              <div style="font-size:64px;margin-bottom:8px">💧</div>
+              <div style="font-size:14px;color:rgba(0,0,0,.4);font-weight:600">GLOW DROPS</div>
+              <div style="font-size:11px;color:rgba(0,0,0,.3)">10% Vitamin C + Niacinamide</div>
+            </div>
+          </div>
+        </div>
+        <div class="pp-thumbs">
+          <div class="pp-thumb active" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)"></div>
+          <div class="pp-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9)"></div>
+          <div class="pp-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)"></div>
+          <div class="pp-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)"></div>
+          <div class="pp-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)"></div>
+        </div>
+      </div>
+
+      <!-- Buy Box -->
+      <div class="pp-buy-box">
+        <p class="pp-benefit">Helps reduce the appearance of dark spots and uneven tone</p>
+        <h1 class="pp-title">Glow Drops — 10% Vitamin C + Niacinamide Serum</h1>
+        <a href="#" class="pp-reviews-link" onclick="event.preventDefault()">★★★★★ 342 Reviews</a>
+
+        <div class="pp-price-row">
+          <span class="pp-price">Rs.1,999</span>
+          <span class="pp-compare">Rs.2,499</span>
+          <span class="pp-sale-badge">Sale</span>
+        </div>
+
+        <!-- Variant -->
+        <select class="pp-variant-select" aria-label="Select size">
+          <option>30ml — Rs.1,999</option>
+          <option>50ml — Rs.2,999</option>
+        </select>
+
+        <!-- Stock urgency -->
+        <div class="pp-stock" aria-live="polite">
+          <span class="pulse"></span>
+          Selling fast — only 23 left in stock
+        </div>
+
+        <!-- Quantity -->
+        <div class="pp-qty-row">
+          <div class="pp-qty">
+            <button onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+            <input type="number" value="1" min="1" max="10" id="ppQty" aria-label="Quantity">
+            <button onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <!-- ATC -->
+        <button class="btn btn-solid pp-atc-btn" onclick="addToCart('Glow Drops',1999)">
+          Add to Cart — Rs.1,999
+        </button>
+
+        <!-- Payment icons -->
+        <div class="pp-payment-icons">
+          <div class="pp-payment-icon">💵 COD</div>
+          <div class="pp-payment-icon">🏦 Bank Transfer</div>
+          <div class="pp-payment-icon">💳 Cards</div>
+          <div class="pp-payment-icon">📱 JazzCash / EasyPaisa</div>
+        </div>
+
+        <!-- Delivery -->
+        <div style="background:var(--success-bg);border:1px solid var(--success-border);padding:12px 16px;font-size:13px;margin-bottom:20px;display:flex;align-items:center;gap:8px">
+          <span>🚚</span>
+          <span>Delivery in 2–6 working days · Standard charge Rs.199 · Free above Rs.3,000</span>
+        </div>
+
+        <!-- Accordions -->
+        <div class="pp-accordion">
+          <div class="pp-accordion-item open">
+            <button class="pp-accordion-header" onclick="toggleAccordion(this)" aria-expanded="true">
+              <span>Ingredients / INCI</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="pp-accordion-body">
+              <div class="pp-accordion-body-inner">
+                Aqua, Ascorbic Acid (10%), Niacinamide (5%), Glycerin, Propanediol, Sodium Hyaluronate, Ferulic Acid, Tocopherol, Panthenol, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin, Citric Acid, Sodium Hydroxide.
+                <br><br>
+                <em style="font-size:12px;color:#999">pH 3.2–3.5 · Vegan · Fragrance-Free · Not tested on animals</em>
+              </div>
+            </div>
+          </div>
+          <div class="pp-accordion-item">
+            <button class="pp-accordion-header" onclick="toggleAccordion(this)" aria-expanded="false">
+              <span>Shipping</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="pp-accordion-body">
+              <div class="pp-accordion-body-inner">
+                Standard delivery: 2–6 working days · Rs.199 flat rate<br>
+                Free shipping on orders above Rs.3,000<br>
+                Cash on Delivery available nationwide<br>
+                <br>
+                <strong>COD orders:</strong> Phone verification required before dispatch. Please keep your phone accessible after ordering.
+              </div>
+            </div>
+          </div>
+          <div class="pp-accordion-item">
+            <button class="pp-accordion-header" onclick="toggleAccordion(this)" aria-expanded="false">
+              <span>Returns & Refunds</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="pp-accordion-body">
+              <div class="pp-accordion-body-inner">
+                Cancel within 12 hours of placing your order for a full refund.<br><br>
+                Refunds processed within 5 business days for unopened products only.<br>
+                Shipping charges are non-refundable.<br>
+                Promotional purchases are excluded from returns.
+              </div>
+            </div>
+          </div>
+          <div class="pp-accordion-item">
+            <button class="pp-accordion-header" onclick="toggleAccordion(this)" aria-expanded="false">
+              <span>FAQ</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="pp-accordion-body">
+              <div class="pp-accordion-body-inner">
+                <strong>Can I use this with retinol?</strong><br>
+                Yes — apply Vitamin C in the morning and retinol at night.<br><br>
+                <strong>Is it pregnancy safe?</strong><br>
+                This formula is pregnancy safe. Always consult your dermatologist.<br><br>
+                <strong>How long until I see results?</strong><br>
+                Most users notice brighter skin within 2–4 weeks. Dark spot reduction typically appears at 4–8 weeks.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RICH DESCRIPTION PANEL -->
+    <div class="pp-rich-panel">
+      <div class="pp-rich-header">
+        <h2>Brighter, More Even Skin — Guaranteed</h2>
+        <p>A fast-absorbing serum that helps reduce the appearance of dark spots, uneven tone, and dullness. Formulated with stable L-Ascorbic Acid that stays potent from first drop to last.</p>
+      </div>
+
+      <div class="pp-rich-chips">
+        <span class="pp-chip">Fragrance-Free</span>
+        <span class="pp-chip">Pregnancy Safe</span>
+        <span class="pp-chip">Non-Comedogenic</span>
+        <span class="pp-chip">Dermatologist-Tested</span>
+        <span class="pp-chip">Lightweight</span>
+        <span class="pp-chip">Vegan</span>
+      </div>
+
+      <div class="pp-rich-split">
+        <!-- LEFT: Benefits + Timeline -->
+        <div class="pp-rich-left">
+          <div class="pp-rich-benefits">
+            <h3>Benefits</h3>
+            <div class="pp-benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Helps fade the appearance of dark spots and pigmentation</span>
+            </div>
+            <div class="pp-benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Promotes a visibly brighter, more radiant complexion</span>
+            </div>
+            <div class="pp-benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Helps minimise the appearance of pores</span>
+            </div>
+            <div class="pp-benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Supports skin barrier with Niacinamide</span>
+            </div>
+            <div class="pp-benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Hydrates without heaviness or residue</span>
+            </div>
+            <div class="pp-benefit-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Helps protect against environmental stress</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:16px">
+            <span style="background:var(--black-band);color:#fff;padding:6px 14px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase">30ml / 1.0 fl oz</span>
+          </div>
+
+          <div class="pp-results-timeline">
+            <h3>When You'll See Results</h3>
+            <div class="pp-timeline-card">
+              <div class="time">Weeks 1–2</div>
+              <div class="change">Skin feels noticeably more hydrated and smooth</div>
+            </div>
+            <div class="pp-timeline-card">
+              <div class="time">Weeks 2–4</div>
+              <div class="change">Overall complexion appears brighter and more even</div>
+            </div>
+            <div class="pp-timeline-card">
+              <div class="time">Weeks 4–6</div>
+              <div class="change">Dark spots and marks start to visibly lighten</div>
+            </div>
+            <div class="pp-timeline-card">
+              <div class="time">Weeks 6–8+</div>
+              <div class="change">Significant improvement in tone clarity and radiance</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Key Ingredients -->
+        <div class="pp-rich-right">
+          <h3>Key Ingredients</h3>
+          <div class="pp-ingredient-box">
+            <div class="name">10% L-Ascorbic Acid (Vitamin C)</div>
+            <div class="func">A potent antioxidant that helps brighten skin tone and fade dark spots by inhibiting melanin production</div>
+          </div>
+          <div class="pp-ingredient-box">
+            <div class="name">5% Niacinamide (Vitamin B3)</div>
+            <div class="func">Strengthens the skin barrier, minimises pore appearance, and helps even out discolouration</div>
+          </div>
+          <div class="pp-ingredient-box">
+            <div class="name">Ferulic Acid</div>
+            <div class="func">Stabilises Vitamin C and doubles its photoprotection when used under sunscreen</div>
+          </div>
+          <div class="pp-ingredient-box">
+            <div class="name">Sodium Hyaluronate</div>
+            <div class="func">Penetrates deeper layers to deliver lasting hydration without clogging pores</div>
+          </div>
+          <div class="pp-ingredient-box">
+            <div class="name">Panthenol (Pro-Vitamin B5)</div>
+            <div class="func">Soothes, calms, and supports the skin's natural repair process</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pp-how-to-use">
+        <h3>How To Use</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+          <div>
+            <div style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--hover-orange);margin-bottom:12px">☀️ Morning (AM)</div>
+            <div class="pp-htu-step">
+              <span class="num">1</span>
+              <span class="text">Cleanse face with a gentle cleanser and pat dry</span>
+            </div>
+            <div class="pp-htu-step">
+              <span class="num">2</span>
+              <span class="text">Apply 3–4 drops to face and neck, avoiding eye area</span>
+            </div>
+            <div class="pp-htu-step">
+              <span class="num">3</span>
+              <span class="text">Follow with moisturiser to lock in</span>
+            </div>
+            <div class="pp-htu-step">
+              <span class="num">4</span>
+              <span class="text" style="font-weight:600;color:var(--ink)">Always finish with SPF 30+ sunscreen</span>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7c6fa0;margin-bottom:12px">🌙 Evening (PM)</div>
+            <div class="pp-htu-step">
+              <span class="num">1</span>
+              <span class="text">Double cleanse to remove sunscreen and makeup</span>
+            </div>
+            <div class="pp-htu-step">
+              <span class="num">2</span>
+              <span class="text">Apply 3–4 drops to clean skin</span>
+            </div>
+            <div class="pp-htu-step">
+              <span class="num">3</span>
+              <span class="text">Follow with your night moisturiser</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:16px;font-size:13px;color:#888">
+          <strong>Storage:</strong> Keep in a cool, dark place. Refrigerate after opening for maximum potency. Use within 6 months of opening.
+        </div>
+      </div>
+
+      <div class="pp-pro-tip">
+        <p><strong>💡 Pro Tip:</strong> Layer this under your sunscreen in the morning — Vitamin C + SPF together provide significantly better protection against sun damage and pigmentation than either alone.</p>
+      </div>
+
+      <div style="padding:20px 40px;font-size:13px;color:#999;border-top:1px solid var(--border)">
+        <strong style="color:var(--ink)">Caution:</strong> For external use only. Avoid direct contact with eyes. If irritation occurs, reduce frequency or discontinue use. Patch test on a small area before first use. Keep out of reach of children.
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div style="padding:0 40px 40px">
+      <div class="section-header">
+        <div>
+          <span class="section-eyebrow">Complete Your Routine</span>
+          <h2 class="section-title">Pairs Well With</h2>
+        </div>
+      </div>
+      <div class="product-carousel">
+        <div class="swiper related-swiper">
+          <div class="swiper-wrapper" id="relatedProducts">
+            <!-- Related products injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky ATC -->
+  <div class="mobile-atc-bar" id="mobileAtcBar">
+    <div class="price">Rs.1,999</div>
+    <button class="btn btn-solid" onclick="addToCart('Glow Drops',1999)">Add to Cart</button>
+  </div>
+</div>
+
+<!-- ============ QUIZ PAGE VIEW ============ -->
+<div class="page-view" id="view-quiz">
+  <div class="quiz-page">
+    <div style="text-align:center;margin-bottom:8px">
+      <span class="section-eyebrow">Personalised For You</span>
+    </div>
+    <h1 style="font-size:28px;font-weight:700;text-align:center;margin-bottom:8px">Find Your Perfect Routine</h1>
+    <p style="text-align:center;color:#666;margin-bottom:32px">Answer 5 quick questions and we'll recommend products matched to your skin.</p>
+
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar" id="quizProgressBar" style="width:20%"></div>
+    </div>
+
+    <!-- Step 1: Concern -->
+    <div class="quiz-step active" id="quizStep1">
+      <h2>What's your main skin concern?</h2>
+      <p>Select the one that bothers you most.</p>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">🟤</div>
+          <div class="label">Dark Spots & Pigmentation</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">🔴</div>
+          <div class="label">Acne & Breakouts</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">😫</div>
+          <div class="label">Dull & Tired Skin</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">🫧</div>
+          <div class="label">Open Pores & Texture</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">👵</div>
+          <div class="label">Fine Lines & Ageing</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">👁️</div>
+          <div class="label">Dark Circles & Puffy Eyes</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">🏜️</div>
+          <div class="label">Dry & Dehydrated Skin</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,1)">
+          <div class="icon">💇</div>
+          <div class="label">Hair Fall & Damage</div>
+        </div>
+      </div>
+      <button class="btn btn-solid" style="margin-top:24px;width:100%" onclick="nextQuizStep(2)">Continue →</button>
+    </div>
+
+    <!-- Step 2: Skin Type -->
+    <div class="quiz-step" id="quizStep2">
+      <h2>What's your skin type?</h2>
+      <p>If you're unsure, pick how your skin feels by midday.</p>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="selectQuizOption(this,2)">
+          <div class="icon">💧</div>
+          <div class="label">Oily</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,2)">
+          <div class="icon">🏜️</div>
+          <div class="label">Dry</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,2)">
+          <div class="icon">⚖️</div>
+          <div class="label">Combination</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,2)">
+          <div class="icon">✨</div>
+          <div class="label">Normal</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:24px">
+        <button class="btn btn-outline" style="flex:1" onclick="prevQuizStep(1)">← Back</button>
+        <button class="btn btn-solid" style="flex:2" onclick="nextQuizStep(3)">Continue →</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Sensitivity -->
+    <div class="quiz-step" id="quizStep3">
+      <h2>How sensitive is your skin?</h2>
+      <p>This helps us recommend the right active percentages.</p>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="selectQuizOption(this,3)">
+          <div class="icon">💪</div>
+          <div class="label">Not Sensitive</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,3)">
+          <div class="icon">🤷</div>
+          <div class="label">Somewhat Sensitive</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,3)">
+          <div class="icon">⚠️</div>
+          <div class="label">Very Sensitive</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,3)">
+          <div class="icon">🤔</div>
+          <div class="label">Not Sure</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:24px">
+        <button class="btn btn-outline" style="flex:1" onclick="prevQuizStep(2)">← Back</button>
+        <button class="btn btn-solid" style="flex:2" onclick="nextQuizStep(4)">Continue →</button>
+      </div>
+    </div>
+
+    <!-- Step 4: Goal -->
+    <div class="quiz-step" id="quizStep4">
+      <h2>What's your main skincare goal?</h2>
+      <p>We'll tailor your routine accordingly.</p>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="selectQuizOption(this,4)">
+          <div class="icon">✨</div>
+          <div class="label">Brighter Skin</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,4)">
+          <div class="icon">🎯</div>
+          <div class="label">Clear Skin</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,4)">
+          <div class="icon">🛡️</div>
+          <div class="label">Anti-Ageing</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,4)">
+          <div class="icon">💆</div>
+          <div class="label">Just Maintain</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:24px">
+        <button class="btn btn-outline" style="flex:1" onclick="prevQuizStep(3)">← Back</button>
+        <button class="btn btn-solid" style="flex:2" onclick="nextQuizStep(5)">Continue →</button>
+      </div>
+    </div>
+
+    <!-- Step 5: Budget -->
+    <div class="quiz-step" id="quizStep5">
+      <h2>What's your monthly skincare budget?</h2>
+      <p>We'll recommend products within your range.</p>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="selectQuizOption(this,5)">
+          <div class="icon">💰</div>
+          <div class="label">Under Rs.3,000</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,5)">
+          <div class="icon">💰💰</div>
+          <div class="label">Rs.3,000 – Rs.5,000</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,5)">
+          <div class="icon">💰💰💰</div>
+          <div class="label">Rs.5,000+</div>
+        </div>
+        <div class="quiz-option" onclick="selectQuizOption(this,5)">
+          <div class="icon">🤷</div>
+          <div class="label">No Budget — Best Results</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:24px">
+        <button class="btn btn-outline" style="flex:1" onclick="prevQuizStep(4)">← Back</button>
+        <button class="btn btn-solid" style="flex:2" onclick="completeQuiz()">See My Recommendations →</button>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="quiz-step" id="quizResults">
+      <div style="text-align:center;margin-bottom:32px">
+        <div style="font-size:48px;margin-bottom:8px">🎉</div>
+        <h2>Your Personalised Routine</h2>
+        <p>Based on your answers, here's what we recommend. Add all to cart for 15% off.</p>
+      </div>
+      <div id="quizResultsGrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:24px">
+        <!-- Results injected by JS -->
+      </div>
+      <div style="text-align:center">
+        <button class="btn btn-solid" style="margin-bottom:12px" onclick="addToCart('Quiz Bundle',4899)">Add All to Cart — Rs.4,899 (Save 15%)</button>
+        <br>
+        <button class="btn btn-underline" onclick="showView('home')">Continue Shopping →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WHAT TO BUY PAGE VIEW ============ -->
+<div class="page-view" id="view-wtb">
+  <div class="container" style="max-width:1000px">
+    <div style="text-align:center;padding:48px 0 32px">
+      <span class="section-eyebrow">Ingredient-First Guide</span>
+      <h1 style="font-size:clamp(24px,4vw,36px);font-weight:700;margin:8px 0">What to Buy for Your Skin</h1>
+      <p style="color:#666;max-width:600px;margin:0 auto">Not sure which products to pick? Find your concern below and see exactly what our customers use — in their own words.</p>
+    </div>
+
+    <div class="wtb-concern">
+      <h3>🟤 Dark Spots & Pigmentation</h3>
+      <p class="symptoms">Symptoms: uneven skin tone, post-acne marks, sun spots, melasma patches</p>
+      <div style="overflow-x:auto">
+      <table class="wtb-table">
+        <thead>
+          <tr><th>What Customers Say</th><th>What It Means</th><th>Recommended Product</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="quote">"My acne marks faded in 3 weeks"</td>
+            <td>Post-inflammatory hyperpigmentation</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Glow Drops Serum →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"Face looks so much brighter now"</td>
+            <td>Overall dullness and melanin buildup</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Pore Minimiser Toner →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"Sun spots on my cheeks are lighter"</td>
+            <td>Sun-induced pigmentation</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Sun Guard SPF 50 →</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="wtb-concern">
+      <h3>🔴 Acne, Pimples & Marks</h3>
+      <p class="symptoms">Symptoms: breakouts, blackheads, whiteheads, bumpy texture, post-acne scarring</p>
+      <div style="overflow-x:auto">
+      <table class="wtb-table">
+        <thead>
+          <tr><th>What Customers Say</th><th>What It Means</th><th>Recommended Product</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="quote">"Pimples stopped coming back"</td>
+            <td>Recurring bacterial/fungal acne</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Clear Skin Cleanser →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"My skin feels so smooth now"</td>
+            <td>Clogged pores and dead skin buildup</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Overnight Glow Mask →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"Old marks are finally fading"</td>
+            <td>Post-acne hyperpigmentation</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Glow Drops Serum →</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="wtb-concern">
+      <h3>🏜️ Dull & Dry Skin</h3>
+      <p class="symptoms">Symptoms: tight feeling, flaky patches, lack of glow, rough texture</p>
+      <div style="overflow-x:auto">
+      <table class="wtb-table">
+        <thead>
+          <tr><th>What Customers Say</th><th>What It Means</th><th>Recommended Product</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="quote">"My skin drinks this up"</td>
+            <td>Dehydrated skin lacking moisture</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Hydra Veil Moisturiser →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"Finally look alive in the morning"</td>
+            <td>Overnight moisture loss and cell turnover</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Overnight Glow Mask →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"No more flaky patches"</td>
+            <td>Compromised moisture barrier</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Hydra Veil Moisturiser →</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="wtb-concern">
+      <h3>💇 Hair Fall & Damaged Hair</h3>
+      <p class="symptoms">Symptoms: excessive shedding, thinning, breakage, weak roots, slow growth</p>
+      <div style="overflow-x:auto">
+      <table class="wtb-table">
+        <thead>
+          <tr><th>What Customers Say</th><th>What It Means</th><th>Recommended Product</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="quote">"Hair fall reduced within a month"</td>
+            <td>Weakened follicles needing nourishment</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Hair Rescue Biotin Serum →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"New baby hairs are growing"</td>
+            <td>Dormant follicle reactivation</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Hair Rescue Biotin Serum →</a></td>
+          </tr>
+          <tr>
+            <td class="quote">"Hair feels so much stronger"</td>
+            <td>Cuticle damage and protein loss</td>
+            <td><a href="#" class="product-link" onclick="showView('product');event.preventDefault()">Hair Rescue Biotin Serum →</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 14. FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-mission">
+      Effective skincare shouldn't cost a fortune — it should just work.
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-col-title">About NOOR</div>
+        <a href="#" onclick="event.preventDefault()">Our Story</a>
+        <a href="#" onclick="event.preventDefault()">How We Formulate</a>
+        <a href="#" onclick="event.preventDefault()">Results Gallery</a>
+        <a href="#" onclick="showView('quiz');event.preventDefault()">Skin Quiz</a>
+        <a href="#" onclick="showView('wtb');event.preventDefault()">What to Buy</a>
+        <a href="#" onclick="event.preventDefault()">Blog</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Shop</div>
+        <a href="#" onclick="showView('collection');event.preventDefault()">All Products</a>
+        <a href="#" onclick="showView('collection');event.preventDefault()">Best Sellers</a>
+        <a href="#" onclick="showView('collection');event.preventDefault()">Bundles</a>
+        <a href="#" onclick="showView('collection');event.preventDefault()">New In</a>
+        <a href="#" onclick="showView('collection');event.preventDefault()">Clearance</a>
+        <a href="#" onclick="event.preventDefault()">Gift Cards</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Get in Touch</div>
+        <p style="margin-bottom:8px">NOOR Skincare (Pvt.) Ltd.<br>Plot 42, Sector 15,<br>Korangi Industrial Area,<br>Karachi 74900, Pakistan</p>
+        <p><a href="tel:+923001234567" style="color:var(--accent-pink)">0300-1234567</a></p>
+        <p><a href="mailto:hello@noor.pk" style="color:var(--accent-pink)">hello@noor.pk</a></p>
+        <p style="font-size:12px;margin-top:8px">WhatsApp: <a href="#" style="color:var(--accent-pink)">Chat Now</a></p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Policies</div>
+        <a href="#" onclick="event.preventDefault()">Shipping Policy</a>
+        <a href="#" onclick="event.preventDefault()">Return & Refund Policy</a>
+        <a href="#" onclick="event.preventDefault()">Privacy Policy</a>
+        <a href="#" onclick="event.preventDefault()">Terms of Service</a>
+        <a href="#" onclick="event.preventDefault()">Affiliate Programme</a>
+        <a href="#" onclick="event.preventDefault()">Track Order</a>
+      </div>
+    </div>
+    <div class="footer-credibility">
+      All products formulated and manufactured by NOOR Skincare in Karachi, Pakistan · Dermatologist-reviewed · Batch-tested for safety
+    </div>
+    <div class="footer-copyright">
+      &copy; 2024 NOOR Skincare (Pvt.) Ltd. All rights reserved. · Made with 🤍 in Karachi
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 15. NEWSLETTER MODAL ============ -->
+<div class="modal-overlay" id="newsletterModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close newsletter popup">✕</button>
+    <div class="modal-image">
+      <div class="modal-image-content">
+        <div class="big-text">10%<br>OFF</div>
+        <div class="sub-text">Your First Order</div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-progress">
+        <div class="modal-progress-bar" id="modalProgress" style="width:0%"></div>
+      </div>
+      <h3>Join the Glow List</h3>
+      <p>Get 10% off your first order, early access to launches, and exclusive offers. No spam — just glow.</p>
+      <form onsubmit="handleModalNewsletter(event)">
+        <input type="text" placeholder="Your name" required aria-label="Your name">
+        <input type="email" placeholder="Your email address" required aria-label="Your email address">
+        <button class="btn btn-solid" type="submit" style="width:100%">Get My 10% Off Code</button>
+      </form>
+      <p class="modal-consent">By subscribing, you agree to receive marketing emails from NOOR. You can unsubscribe anytime. We respect your privacy and will never share your data.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 16. SOCIAL PROOF TOAST ============ -->
+<div class="toast-notification" id="toastNotification">
+  <div class="toast-img" style="display:flex;align-items:center;justify-content:center;font-size:28px;background:var(--soft-panel)">🧴</div>
+  <div class="toast-info">
+    <div class="toast-title">Someone in Lahore just bought Glow Drops Serum</div>
+    <div class="toast-meta">12 minutes ago</div>
+  </div>
+  <button class="toast-close" onclick="hideToast()" aria-label="Close notification">✕</button>
+</div>
+
+<!-- ============ COOKIE BAR ============ -->
+<div class="cookie-bar" id="cookieBar">
+  <span>We use cookies to improve your experience. By continuing, you agree to our <a href="#" style="color:var(--accent-pink);text-decoration:underline" onclick="event.preventDefault()">Cookie Policy</a>.</span>
+  <button onclick="acceptCookies()">Accept All</button>
+</div>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="#" class="whatsapp-float" aria-label="Chat on WhatsApp" onclick="event.preventDefault()">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ============ JSON-LD (Product) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Glow Drops — 10% Vitamin C + Niacinamide Serum",
+  "description": "A fast-absorbing serum that helps reduce the appearance of dark spots, uneven tone, and dullness.",
+  "brand": {"@type": "Brand", "name": "NOOR"},
+  "image": [],
+  "offers": {
+    "@type": "Offer",
+    "price": "1999",
+    "priceCurrency": "PKR",
+    "availability": "https://schema.org/InStock",
+    "seller": {"@type": "Organization", "name": "NOOR Skincare"}
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "342"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://noor.pk"},
+      {"@type": "ListItem", "position": 2, "name": "Serums & Toners", "item": "https://noor.pk/collections/serums-toners"},
+      {"@type": "ListItem", "position": 3, "name": "Glow Drops Serum", "item": "https://noor.pk/products/glow-drops"}
+    ]
+  }
+}
+</script>
+
+<!-- ============ SWIPER JS ============ -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+/* ===================================================================
+   NOOR STORE — JAVASCRIPT
+   =================================================================== */
+
+// ========== DATA ==========
+const products = [
+  {
+    id: 1, title: "Glow Drops — 10% Vitamin C + Niacinamide Serum",
+    shortTitle: "Glow Drops Serum",
+    price: 1999, compare: 2499, rating: 4.7, reviews: 342,
+    badge: "Best Seller", gradient: "linear-gradient(135deg,#fce4ec 0%,#f8bbd0 50%,#f48fb1 100%)",
+    emoji: "💧", concern: "dark-spots"
+  },
+  {
+    id: 2, title: "Clear Skin — 2% Salicylic Acid + Tea Tree Cleanser",
+    shortTitle: "Clear Skin Cleanser",
+    price: 1299, compare: 1599, rating: 4.6, reviews: 278,
+    badge: "Best Seller", gradient: "linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 50%,#a5d6a7 100%)",
+    emoji: "🧼", concern: "acne"
+  },
+  {
+    id: 3, title: "Hydra Veil — Hyaluronic Acid + Ceramide Moisturiser",
+    shortTitle: "Hydra Veil Moisturiser",
+    price: 1799, compare: 2199, rating: 4.8, reviews: 415,
+    badge: "Best Seller", gradient: "linear-gradient(135deg,#e3f2fd 0%,#bbdefb 50%,#90caf9 100%)",
+    emoji: "💦", concern: "dull-dry"
+  },
+  {
+    id: 4, title: "Sun Guard — SPF 50 PA++++ Lightweight Sunscreen",
+    shortTitle: "Sun Guard SPF 50",
+    price: 1499, compare: 1899, rating: 4.5, reviews: 198,
+    badge: "New", gradient: "linear-gradient(135deg,#fff9c4 0%,#fff59d 50%,#fff176 100%)",
+    emoji: "☀️", concern: "sun-protection"
+  },
+  {
+    id: 5, title: "Bright Eye — Vitamin K + Caffeine Eye Cream",
+    shortTitle: "Bright Eye Cream",
+    price: 1799, compare: 2299, rating: 4.4, reviews: 156,
+    badge: "", gradient: "linear-gradient(135deg,#f3e5f5 0%,#e1bee7 50%,#ce93d8 100%)",
+    emoji: "👁️", concern: "dark-circles"
+  },
+  {
+    id: 6, title: "Hair Rescue — Biotin + Argan Oil Hair Serum",
+    shortTitle: "Hair Rescue Serum",
+    price: 1999, compare: 2499, rating: 4.6, reviews: 234,
+    badge: "Best Seller", gradient: "linear-gradient(135deg,#efebe9 0%,#d7ccc8 50%,#bcaaa4 100%)",
+    emoji: "💇", concern: "hair-fall"
+  },
+  {
+    id: 7, title: "Pore Minimiser — 5% Niacinamide + Zinc Toner",
+    shortTitle: "Pore Minimiser Toner",
+    price: 1299, compare: 1599, rating: 4.5, reviews: 189,
+    badge: "", gradient: "linear-gradient(135deg,#e0f2f1 0%,#b2dfdb 50%,#80cbc4 100%)",
+    emoji: "🫧", concern: "pores"
+  },
+  {
+    id: 8, title: "Overnight Glow — 5% Glycolic Acid + Aloe Mask",
+    shortTitle: "Overnight Glow Mask",
+    price: 1499, compare: 1899, rating: 4.7, reviews: 267,
+    badge: "", gradient: "linear-gradient(135deg,#fff3e0 0%,#ffe0b2 50%,#ffcc80 100%)",
+    emoji: "🌙", concern: "dull-dry"
+  }
+];
+
+const bundles = [
+  {
+    id: 101, title: "Anti-Dark Spot Duo",
+    shortTitle: "Anti-Dark Spot Duo",
+    price: 3399, compare: 3998, save: "15%", rating: 4.8, reviews: 89,
+    badge: "Duo Bundle", gradient: "linear-gradient(135deg,#e91e63 0%,#f48fb1 100%)",
+    emoji: "✨", products: "Glow Drops + Pore Minimiser"
+  },
+  {
+    id: 102, title: "Glow Trio Routine",
+    shortTitle: "Glow Trio Routine",
+    price: 4899, compare: 5797, save: "15%", rating: 4.9, reviews: 124,
+    badge: "Trio Bundle", gradient: "linear-gradient(135deg,#9c27b0 0%,#ce93d8 100%)",
+    emoji: "💫", products: "Cleanser + Serum + Moisturiser"
+  },
+  {
+    id: 103, title: "Acne Fighter Bundle",
+    shortTitle: "Acne Fighter Bundle",
+    price: 3999, compare: 4997, save: "20%", rating: 4.7, reviews: 67,
+    badge: "Pro Bundle", gradient: "linear-gradient(135deg,#4caf50 0%,#a5d6a7 100%)",
+    emoji: "🎯", products: "Cleanser + Toner + Mask"
+  },
+  {
+    id: 104, title: "Hair Rescue Duo",
+    shortTitle: "Hair Rescue Duo",
+    price: 3299, compare: 3698, save: "10%", rating: 4.6, reviews: 45,
+    badge: "Duo Bundle", gradient: "linear-gradient(135deg,#795548 0%,#bcaaa4 100%)",
+    emoji: "💇", products: "Hair Serum + Mask"
+  }
+];
+
+const concerns = [
+  { label: "Dark Spots & Pigmentation", count: 8, gradient: "linear-gradient(135deg,#4a2c2a,#8b6f47)", icon: "🟤" },
+  { label: "Acne & Breakouts", count: 6, gradient: "linear-gradient(135deg,#c0392b,#e74c3c)", icon: "🔴" },
+  { label: "Dull & Dry Skin", count: 7, gradient: "linear-gradient(135deg,#7f8c8d,#bdc3c7)", icon: "✨" },
+  { label: "Open Pores", count: 5, gradient: "linear-gradient(135deg,#2c3e50,#3498db)", icon: "🫧" },
+  { label: "Fine Lines & Ageing", count: 4, gradient: "linear-gradient(135deg,#8e44ad,#c39bd3)", icon: "⏳" },
+  { label: "Dark Circles", count: 3, gradient: "linear-gradient(135deg,#2d3436,#636e72)", icon: "👁️" },
+  { label: "Hair Fall & Damage", count: 4, gradient: "linear-gradient(135deg,#6d4c41,#a1887f)", icon: "💇" },
+  { label: "Pregnancy Safe", count: 10, gradient: "linear-gradient(135deg,#f48fb1,#fce4ec)", icon: "🤰" }
+];
+
+const blogPosts = [
+  { title: "Vitamin C vs Niacinamide: Which One Do You Actually Need?", tag: "Ingredients", excerpt: "Both are powerhouse actives, but they work differently. Here's how to choose based on your concern.", date: "3 days ago", gradient: "linear-gradient(135deg,#fce4ec,#f8bbd0)" },
+  { title: "The Real Reason Your Sunscreen Isn't Working", tag: "Sun Protection", excerpt: "Most Pakistanis under-apply SPF by 70%. Here's the right amount and reapplication schedule.", date: "1 week ago", gradient: "linear-gradient(135deg,#fff9c4,#fff176)" },
+  { title: "Salicylic Acid 101: Everything You Need for Clear Skin", tag: "Acne Care", excerpt: "From blackheads to cystic acne — how 2% BHA works and when to expect results.", date: "2 weeks ago", gradient: "linear-gradient(135deg,#e8f5e9,#c8e6c9)" }
+];
+
+const reviews = [
+  { name: "Ayesha K.", city: "Lahore", date: "3 days ago", title: "My dark spots are actually fading!", body: "I've been using Glow Drops for 6 weeks and the difference is unreal. My acne marks from university are finally lighter.", product: "Glow Drops Serum", rating: 5, emoji: "👩" },
+  { name: "Fatima R.", city: "Karachi", date: "1 week ago", title: "Best cleanser for oily skin", body: "Clear Skin cleanser is the only one that doesn't make my face feel tight after washing. Pimples reduced in 2 weeks.", product: "Clear Skin Cleanser", rating: 5, emoji: "👩‍🦱" },
+  { name: "Hira S.", city: "Islamabad", date: "2 weeks ago", title: "Finally a moisturiser that doesn't break me out", body: "Hydra Veil is so lightweight and hydrating. I have combination skin and this works perfectly for both zones.", product: "Hydra Veil Moisturiser", rating: 5, emoji: "👩‍🦰" },
+  { name: "Zainab M.", city: "Rawalpindi", date: "3 weeks ago", title: "Hair fall reduced significantly", body: "I was losing so much hair postpartum. After 4 weeks of Hair Rescue, I can see baby hairs growing and less in my brush.", product: "Hair Rescue Serum", rating: 5, emoji: "💇‍♀️" },
+  { name: "Sana T.", city: "Faisalabad", date: "4 weeks ago", title: "No more white cast!", body: "Sun Guard is the first SPF 50 that doesn't leave a white cast on my medium skin tone. Absorbs in seconds.", product: "Sun Guard SPF 50", rating: 5, emoji: "👩‍🦱" },
+  { name: "Maria J.", city: "Peshawar", date: "1 month ago", title: "Eye circles lighter in 3 weeks", body: "I've tried so many eye creams. Bright Eye actually worked — my dark circles are noticeably lighter and puffiness is down.", product: "Bright Eye Cream", rating: 4, emoji: "👩" }
+];
+
+// ========== PRODUCT CARD RENDERER ==========
+function renderProductCard(p, isBundle) {
+  const savePercent = Math.round((1 - p.price / p.compare) * 100);
+  const saveAmount = p.compare - p.price;
+  return `
+    <div class="swiper-slide">
+      <div class="product-card" onclick="${isBundle ? '' : `showView('product')`}" style="cursor:pointer">
+        <div class="product-card-img-wrap">
+          ${p.badge ? `<div class="sale-badge">${p.badge}</div>` : ''}
+          <div style="width:100%;height:100%;background:${p.gradient};display:flex;align-items:center;justify-content:center">
+            <span style="font-size:64px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.1))">${p.emoji}</span>
+          </div>
+          <div class="img-hover" style="background:${p.gradient};display:flex;align-items:center;justify-content:center">
+            <span style="font-size:72px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.15))">${p.emoji}</span>
+          </div>
+          <button class="product-card-wishlist" onclick="event.stopPropagation();toggleWishlist(this)" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="product-card-overlay">
+            <button class="product-card-atc" onclick="event.stopPropagation();addToCart('${p.shortTitle}',${p.price})">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card-info">
+          <div class="product-card-title">${p.title}</div>
+          ${isBundle ? `<div style="font-size:12px;color:#888;margin-bottom:2px">${p.products}</div>` : ''}
+          <div class="product-card-reviews">
+            <span class="stars">★★★★★</span>
+            <span>${p.reviews} Reviews</span>
+          </div>
+          <div class="product-card-price">
+            <span>Rs.${p.price.toLocaleString('en-IN')}</span>
+            <span class="compare">Rs.${p.compare.toLocaleString('en-IN')}</span>
+            <span class="save">${isBundle ? `Save ${p.save}` : `${savePercent}% off`}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ========== INITIALIZE CAROUSELS ==========
+function initSwipers() {
+  // Announcement
+  new Swiper('.announcement-swiper', {
+    loop: true, autoplay: { delay: 4000 }, allowTouchMove: false,
+    effect: 'fade', fadeEffect: { crossFade: true }
+  });
+
+  // Hero
+  new Swiper('.hero-swiper', {
+    loop: true, autoplay: { delay: 3000 },
+    effect: 'fade', fadeEffect: { crossFade: true },
+    pagination: { el: '.hero-pagination', clickable: true },
+    navigation: { prevEl: '.hero-prev', nextEl: '.hero-next' }
+  });
+
+  // Featured Products
+  new Swiper('.featured-swiper', {
+    slidesPerView: 2, spaceBetween: 16,
+    navigation: { prevEl: '.featured-prev', nextEl: '.featured-next' },
+    breakpoints: { 768: { slidesPerView: 3 }, 1024: { slidesPerView: 4 } }
+  });
+
+  // Bundles
+  new Swiper('.bundle-swiper', {
+    slidesPerView: 2, spaceBetween: 16,
+    navigation: { prevEl: '.bundle-prev', nextEl: '.bundle-next' },
+    breakpoints: { 768: { slidesPerView: 3 }, 1024: { slidesPerView: 4 } }
+  });
+
+  // Before/After
+  new Swiper('.ba-swiper', {
+    slidesPerView: 2, spaceBetween: 12,
+    navigation: { prevEl: '.ba-prev', nextEl: '.ba-next' },
+    breakpoints: { 768: { slidesPerView: 3 }, 1024: { slidesPerView: 5 } }
+  });
+
+  // Blog
+  new Swiper('.blog-swiper', {
+    slidesPerView: 1, spaceBetween: 16,
+    navigation: { prevEl: '.blog-prev', nextEl: '.blog-next' },
+    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+  });
+
+  // UGC Reviews
+  new Swiper('.ugc-swiper', {
+    slidesPerView: 1, spaceBetween: 16,
+    navigation: { prevEl: '.ugc-prev', nextEl: '.ugc-next' },
+    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+  });
+
+  // Related Products
+  new Swiper('.related-swiper', {
+    slidesPerView: 2, spaceBetween: 16,
+    breakpoints: { 768: { slidesPerView: 3 }, 1024: { slidesPerView: 4 } }
+  });
+}
+
+// ========== POPULATE CAROUSELS ==========
+function populateCarousels() {
+  // Featured Products
+  document.getElementById('featuredProducts').innerHTML = products.map(p => renderProductCard(p, false)).join('');
+
+  // Bundles
+  document.getElementById('bundleProducts').innerHTML = bundles.map(b => renderProductCard(b, true)).join('');
+
+  // Concern Tiles
+  document.getElementById('concernTiles').innerHTML = concerns.map(c => `
+    <div class="collection-tile" onclick="showView('collection')">
+      <div style="width:100%;height:100%;background:${c.gradient};display:flex;align-items:center;justify-content:center">
+        <span style="font-size:56px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.2))">${c.icon}</span>
+      </div>
+      <div class="collection-tile-overlay">
+        <div class="collection-tile-label">${c.label}</div>
+        <div class="collection-tile-count">${c.count} Products</div>
+      </div>
+    </div>
+  `).join('');
+
+  // Before/After
+  const baGradients = [
+    'linear-gradient(135deg,#fce4ec,#f8bbd0)', 'linear-gradient(135deg,#e8f5e9,#c8e6c9)',
+    'linear-gradient(135deg,#e3f2fd,#bbdefb)', 'linear-gradient(135deg,#fff3e0,#ffe0b2)',
+    'linear-gradient(135deg,#f3e5f5,#e1bee7)', 'linear-gradient(135deg,#e0f2f1,#b2dfdb)',
+    'linear-gradient(135deg,#fff9c4,#fff59d)', 'linear-gradient(135deg,#efebe9,#d7ccc8)',
+    'linear-gradient(135deg,#fce4ec,#f8bbd0)', 'linear-gradient(135deg,#e8f5e9,#c8e6c9)',
+    'linear-gradient(135deg,#e3f2fd,#bbdefb)', 'linear-gradient(135deg,#fff3e0,#ffe0b2)',
+    'linear-gradient(135deg,#f3e5f5,#e1bee7)', 'linear-gradient(135deg,#e0f2f1,#b2dfdb)',
+    'linear-gradient(135deg,#fff9c4,#fff59d)', 'linear-gradient(135deg,#efebe9,#d7ccc8)'
+  ];
+  const baLabels = ['6 Weeks', '4 Weeks', '8 Weeks', '3 Weeks', '5 Weeks', '2 Months', '4 Weeks', '6 Weeks', '5 Weeks', '3 Weeks', '7 Weeks', '4 Weeks', '8 Weeks', '6 Weeks', '2 Months', '5 Weeks'];
+  document.getElementById('baCarousel').innerHTML = baGradients.map((g, i) => `
+    <div class="swiper-slide">
+      <div class="ba-card">
+        <div style="width:100%;aspect-ratio:4/5;background:${g};display:flex;align-items:center;justify-content:center">
+          <span style="font-size:48px;opacity:.5">${['🧑','👩','👨','👩‍🦱','🧑‍🦰','👩‍🦰','🧑‍🦲','👱‍♀️'][i % 8]}</span>
+        </div>
+        <div class="ba-label">${baLabels[i]} Result</div>
+      </div>
+    </div>
+  `).join('');
+
+  // Blog
+  document.getElementById('blogCarousel').innerHTML = blogPosts.map(b => `
+    <div class="swiper-slide">
+      <div class="blog-card">
+        <div class="blog-card-img">
+          <div style="width:100%;height:100%;background:${b.gradient};display:flex;align-items:center;justify-content:center">
+            <span style="font-size:48px;opacity:.6">📚</span>
+          </div>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-card-tag">${b.tag}</span>
+          <h3 class="blog-card-title">${b.title}</h3>
+          <p class="blog-card-excerpt">${b.excerpt}</p>
+          <span class="blog-card-meta">${b.date}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // UGC Reviews
+  document.getElementById('ugcCarousel').innerHTML = reviews.map(r => `
+    <div class="swiper-slide">
+      <div class="ugg-review-card">
+        <div class="ugc-header">
+          <div style="width:48px;height:48px;border-radius:50%;background:var(--soft-panel);display:flex;align-items:center;justify-content:center;font-size:24px">${r.emoji}</div>
+          <div>
+            <div class="ugc-name">${r.name} · ${r.city}</div>
+            <div class="ugc-date">${r.date}</div>
+          </div>
+        </div>
+        <div class="ugc-stars">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div>
+        <div class="ugc-title">${r.title}</div>
+        <div class="ugc-body">${r.body}</div>
+        <a href="#" class="ugc-product" onclick="showView('product');event.preventDefault()">Product: ${r.product} →</a>
+      </div>
+    </div>
+  `).join('');
+
+  // Collection Grid
+  document.getElementById('collectionGrid').innerHTML = products.concat(bundles).map(p => `
+    <div class="product-card" onclick="showView('product')" style="cursor:pointer">
+      <div class="product-card-img-wrap">
+        ${p.badge ? `<div class="sale-badge">${p.badge}</div>` : ''}
+        <div style="width:100%;height:100%;background:${p.gradient};display:flex;align-items:center;justify-content:center">
+          <span style="font-size:56px">${p.emoji}</span>
+        </div>
+        <button class="product-card-wishlist" onclick="event.stopPropagation();toggleWishlist(this)" aria-label="Add to wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <div class="product-card-overlay">
+          <button class="product-card-atc" onclick="event.stopPropagation();addToCart('${p.shortTitle}',${p.price})">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <div class="product-card-title">${p.title}</div>
+        <div class="product-card-reviews">
+          <span class="stars">★★★★★</span>
+          <span>${p.reviews} Reviews</span>
+        </div>
+        <div class="product-card-price">
+          <span>Rs.${p.price.toLocaleString('en-IN')}</span>
+          <span class="compare">Rs.${p.compare.toLocaleString('en-IN')}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // Related Products (on product page)
+  document.getElementById('relatedProducts').innerHTML = products.slice(2, 6).map(p => renderProductCard(p, false)).join('');
+}
+
+// ========== VIEW MANAGEMENT ==========
+function showView(view) {
+  document.querySelectorAll('.page-view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-' + view).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Show/hide mobile ATC bar
+  const mobileBar = document.getElementById('mobileAtcBar');
+  if (mobileBar) {
+    mobileBar.classList.toggle('visible', view === 'product' && window.innerWidth < 768);
+  }
+
+  // Re-init swipers if needed
+  if (view === 'product' || view === 'collection') {
+    setTimeout(() => {
+      const relatedSwiper = document.querySelector('.related-swiper');
+      if (relatedSwiper && !relatedSwiper.swiper) {
+        new Swiper('.related-swiper', {
+          slidesPerView: 2, spaceBetween: 16,
+          breakpoints: { 768: { slidesPerView: 3 }, 1024: { slidesPerView: 4 } }
+        });
+      }
+    }, 100);
+  }
+
+  // Analytics
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view', { page_title: view });
+  }
+}
+
+// ========== CART ==========
+let cartItems = [];
+let cartTotal = 0;
+
+function addToCart(name, price) {
+  cartItems.push({ name, price });
+  cartTotal += price;
+  document.getElementById('cartCount').textContent = cartItems.length;
+
+  // Animation
+  const countBadge = document.getElementById('cartCount');
+  countBadge.style.transform = 'scale(1.3)';
+  setTimeout(() => countBadge.style.transform = 'scale(1)', 200);
+
+  // Analytics
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'add_to_cart', {
+      currency: 'PKR',
+      value: price,
+      items: [{ item_name: name, price: price }]
+    });
+  }
+
+  showToast(`Added "${name}" to cart — Rs.${price.toLocaleString('en-IN')}`);
+}
+
+function openCart() {
+  if (cartItems.length === 0) {
+    showToast('Your cart is empty. Start shopping!');
+    return;
+  }
+
+  let cartHtml = '🛒 Cart:\n';
+  cartItems.forEach(item => {
+    cartHtml += `• ${item.name} — Rs.${item.price.toLocaleString('en-IN')}\n`;
+  });
+  cartHtml += `\nTotal: Rs.${cartTotal.toLocaleString('en-IN')}`;
+  cartHtml += `\n\nShipping: Rs.199 (Free above Rs.3,000)`;
+  cartHtml += `\n\nPayment: COD, Bank Transfer, Cards, JazzCash/EasyPaisa`;
+
+  alert(cartHtml);
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toastNotification');
+  toast.querySelector('.toast-title').textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 4000);
+}
+
+function hideToast() {
+  document.getElementById('toastNotification').classList.remove('show');
+}
+
+// ========== WISHLIST ==========
+function toggleWishlist(btn) {
+  btn.classList.toggle('active');
+}
+
+// ========== PRODUCT PAGE ==========
+function changeQty(delta) {
+  const input = document.getElementById('ppQty');
+  let val = parseInt(input.value) + delta;
+  if (val < 1) val = 1;
+  if (val > 10) val = 10;
+  input.value = val;
+}
+
+function toggleAccordion(btn) {
+  const item = btn.closest('.pp-accordion-item');
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.pp-accordion-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ========== QUIZ ==========
+let currentQuizStep = 1;
+let quizAnswers = {};
+
+function selectQuizOption(el, step) {
+  el.closest('.quiz-options').querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  quizAnswers['step' + step] = el.querySelector('.label').textContent;
+}
+
+function nextQuizStep(step) {
+  document.getElementById('quizStep' + currentQuizStep).classList.remove('active');
+  document.getElementById('quizStep' + step).classList.add('active');
+  currentQuizStep = step;
+  document.getElementById('quizProgressBar').style.width = (step * 20) + '%';
+}
+
+function prevQuizStep(step) {
+  document.getElementById('quizStep' + currentQuizStep).classList.remove('active');
+  document.getElementById('quizStep' + step).classList.add('active');
+  currentQuizStep = step;
+  document.getElementById('quizProgressBar').style.width = (step * 20) + '%';
+}
+
+function completeQuiz() {
+  document.getElementById('quizStep' + currentQuizStep).classList.remove('active');
+  document.getElementById('quizResults').classList.add('active');
+  document.getElementById('quizProgressBar').style.width = '100%';
+
+  // Populate results
+  const recommended = products.slice(0, 3);
+  document.getElementById('quizResultsGrid').innerHTML = recommended.map(p => `
+    <div style="border:1px solid var(--border);padding:16px;text-align:center">
+      <div style="width:80px;height:80px;margin:0 auto 12px;background:${p.gradient};border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px">${p.emoji}</div>
+      <div style="font-size:14px;font-weight:600;margin-bottom:4px">${p.shortTitle}</div>
+      <div style="font-size:13px;color:#888;margin-bottom:8px">Rs.${p.price.toLocaleString('en-IN')}</div>
+      <button class="btn btn-solid" style="font-size:11px;padding:8px 16px" onclick="addToCart('${p.shortTitle}',${p.price})">Add to Cart</button>
+    </div>
+  `).join('');
+
+  // Analytics
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'complete_quiz', quizAnswers);
+  }
+}
+
+// ========== NEWSLETTER MODAL ==========
+let modalTimer;
+function showNewsletterModal() {
+  const modal = document.getElementById('newsletterModal');
+  modal.classList.add('active');
+  const progressBar = document.getElementById('modalProgress');
+  progressBar.style.width = '0%';
+  setTimeout(() => progressBar.style.width = '100%', 100);
+
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'generate_lead', { method: 'newsletter_modal' });
+  }
+}
+
+function closeModal() {
+  document.getElementById('newsletterModal').classList.remove('active');
+  localStorage.setItem('noor_modal_shown', 'true');
+}
+
+function handleNewsletter(e) {
+  e.preventDefault();
+  showToast('Welcome to the Glow List! Check your email for your 10% code.');
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'newsletter_signup');
+  }
+}
+
+function handleModalNewsletter(e) {
+  e.preventDefault();
+  showToast('🎉 Your 10% code is GLOW10 — check your email!');
+  closeModal();
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'newsletter_signup', { source: 'modal' });
+  }
+}
+
+// ========== FILTER TOGGLE ==========
+function toggleFilter() {
+  showToast('Filter drawer would open here in Shopify theme.');
+}
+
+// ========== COOKIES ==========
+function acceptCookies() {
+  document.getElementById('cookieBar').classList.remove('show');
+  localStorage.setItem('noor_cookies_accepted', 'true');
+}
+
+// ========== HEADER SCROLL ==========
+function initHeaderScroll() {
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('siteHeader');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    lastScroll = window.scrollY;
+  });
+}
+
+// ========== MOBILE NAV ==========
+function initMobileNav() {
+  document.getElementById('navToggle').addEventListener('click', () => {
+    const nav = document.getElementById('mainNav');
+    const toggle = document.getElementById('navToggle');
+    nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+  });
+}
+
+// ========== RECENTLY BOUGHT TOASTS ==========
+const toastProducts = [
+  { name: 'Glow Drops Serum', city: 'Lahore', time: '8 minutes ago', emoji: '💧' },
+  { name: 'Clear Skin Cleanser', city: 'Karachi', time: '14 minutes ago', emoji: '🧼' },
+  { name: 'Hydra Veil Moisturiser', city: 'Islamabad', time: '22 minutes ago', emoji: '💦' },
+  { name: 'Hair Rescue Serum', city: 'Faisalabad', time: '31 minutes ago', emoji: '💇' },
+  { name: 'Glow Trio Bundle', city: 'Rawalpindi', time: '45 minutes ago', emoji: '💫' },
+  { name: 'Sun Guard SPF 50', city: 'Peshawar', time: '1 hour ago', emoji: '☀️' }
+];
+let toastIndex = 0;
+
+function cycleToasts() {
+  if (window.innerWidth < 480) return;
+  const t = toastProducts[toastIndex];
+  const toast = document.getElementById('toastNotification');
+  toast.querySelector('.toast-title').textContent = `Someone in ${t.city} just bought ${t.name}`;
+  toast.querySelector('.toast-meta').textContent = t.time;
+  toast.querySelector('.toast-img').textContent = t.emoji;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 5000);
+  toastIndex = (toastIndex + 1) % toastProducts.length;
+}
+
+// ========== INIT ==========
+document.addEventListener('DOMContentLoaded', () => {
+  populateCarousels();
+  initSwipers();
+  initHeaderScroll();
+  initMobileNav();
+
+  // Cookie bar
+  if (!localStorage.getItem('noor_cookies_accepted')) {
+    setTimeout(() => document.getElementById('cookieBar').classList.add('show'), 2000);
+  }
+
+  // Newsletter modal (show after 8s if not dismissed)
+  if (!localStorage.getItem('noor_modal_shown')) {
+    setTimeout(showNewsletterModal, 8000);
+  }
+
+  // Recently bought toasts
+  setTimeout(() => {
+    cycleToasts();
+    setInterval(cycleToasts, 15000);
+  }, 5000);
+
+  // Keyboard nav for mega menus
+  document.querySelectorAll('.nav-list > li > a').forEach(link => {
+    link.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const mega = link.nextElementSibling;
+        if (mega && mega.classList.contains('mega-menu')) {
+          const isVisible = mega.style.opacity === '1' || getComputedStyle(mega).opacity === '1';
+          mega.style.opacity = isVisible ? '0' : '1';
+          mega.style.visibility = isVisible ? 'hidden' : 'visible';
+          mega.style.transform = isVisible ? 'translateX(-50%) translateY(8px)' : 'translateX(-50%) translateY(0)';
+        }
+      }
+    });
+  });
+
+  // Product page thumbnails
+  document.querySelectorAll('.pp-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      document.querySelectorAll('.pp-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    });
+  });
+
+  // Close modal on overlay click
+  document.getElementById('newsletterModal').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeModal();
+  });
+
+  // Close modal on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  // Mobile ATC bar visibility on scroll (product page)
+  window.addEventListener('scroll', () => {
+    const mobileBar = document.getElementById('mobileAtcBar');
+    if (mobileBar && document.getElementById('view-product').classList.contains('active') && window.innerWidth < 768) {
+      mobileBar.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
